@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url('/fonts/Avenir Next Condensed.ttc') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: 'Avenir Next Condensed', sans-serif;
+}
+
+h1, h2, h3, .display-font {
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+}

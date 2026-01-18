@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta del Teatro 2026 - Bogotá</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #F7F6F0;
+            color: #2A3535;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .geometric-mask {
+            clip-path: circle(50% at 50% 100%);
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .ticket-cutout {
+            position: relative;
+        }
+
+        .ticket-cutout::before,
+        .ticket-cutout::after {
+            content: '';
+            position: absolute;
+            left: -12px;
+            width: 24px;
+            height: 24px;
+            background-color: #F7F6F0;
+            border-radius: 50%;
+            border: 3px solid #2A3535;
+            z-index: 10;
+        }
+
+        .ticket-cutout::before {
+            top: 20%;
+        }
+
+        .ticket-cutout::after {
+            bottom: 20%;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-marquee {
+            animation: marquee 20s linear infinite;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Avenir Next Condensed"', 'sans-serif'],
+                        display: ['"Bebas Neue"', 'sans-serif'],
+                    },
+                    colors: {
+                        offWhite: '#F7F6F0',
+                        midnight: '#2A3535',
+                        festPurple: '#5a539f',
+                        bogotaTeal: '#00aba0',
+                        sunOrange: '#f59d2d',
+                        magentaEnergy: '#e40b59',
+                        salmonPink: '#eb5e5f',
+                        softRose: '#ea527c',
+                    },
+                    borderWidth: {
+                        '3': '3px',
+                        '6': '6px',
+                    },
+                    animation: {
+                        'marquee': 'marquee 20s linear infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="bg-offWhite text-midnight">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
