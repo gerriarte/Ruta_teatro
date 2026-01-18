@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Ruta del Teatro 2026 - Bogotá
 
-# Run and deploy your AI Studio app
+Este proyecto es la plataforma oficial para la Ruta del Teatro 2026 en Bogotá, Colombia.
 
-This contains everything you need to run your app locally.
+## Tecnologías
 
-View your app in AI Studio: https://ai.studio/apps/drive/15iegqcd5HSusEp45ilsst5D2QW4URq-E
+- Vite + React
+- Tailwind CSS
+- TypeScript
 
-## Run Locally
+## Desarrollo Local
 
-**Prerequisites:**  Node.js
+1. Clonar el repositorio.
+2. Instalar dependencias:
 
+   ```bash
+   npm install
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+3. Ejecutar servidor de desarrollo:
+
+   ```bash
+   npm run dev
+   ```
+
+## Estructura
+
+- `src/App.tsx`: Componente principal.
+- `src/constants.tsx`: Datos de obras y agrupaciones.
+- `public/obras`: Imágenes de las obras.
