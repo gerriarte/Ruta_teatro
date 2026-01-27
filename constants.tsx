@@ -295,6 +295,20 @@ export const PLAYS: Play[] = [
     ageRating: '+15'
   },
   {
+    id: 'bolivar-20',
+    collectiveId: 'vargastejada',
+    title: 'AMORÍO POSTRERO DE BOLÍVAR',
+    venue: 'Teatro Vargastejada – Casa de Fu',
+    date: 'FEB 20',
+    time: '7:00 PM',
+    genre: 'FICSTORIA',
+    image: '/obras/DIA VIERNES 20_1. Amorío Postrero Teatro - portada.png',
+    color: 'bg-magentaEnergy',
+    description: 'En este montaje, Simón Bolívar, repudiado y perseguido, llega a Honda, donde el amor de su pueblo lo reconforta antes de partir definitivamente.',
+    duration: '80 MIN',
+    ageRating: 'TODO PÚBLICO'
+  },
+  {
     id: 'cazafantasmas-20',
     collectiveId: 'changua',
     title: 'OPERACIÓN CAZAFANTASMAS',
