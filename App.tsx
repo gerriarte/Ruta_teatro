@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Navigation from './components/Navigation';
 import TicketCard from './components/TicketCard';
 import { PLAYS, AGRUPACIONES, CENTRAL_BOX_OFFICE_PHONE, EyeIcon, SmileIcon } from './constants';
@@ -62,14 +62,19 @@ const App: React.FC = () => {
   const [filterGenre, setFilterGenre] = useState<string>('ALL');
   const [filterDate, setFilterDate] = useState<string>('ALL');
   const [isMapZoomed, setIsMapZoomed] = useState(false);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const logoRef = useRef<HTMLDivElement>(null);
 
-  const handleMouseMove = (e: React.MouseEvent) => {
-    setMousePos({
-      x: (e.clientX / window.innerWidth - 0.5) * 20,
-      y: (e.clientY / window.innerHeight - 0.5) * 20,
-    });
-  };
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!logoRef.current) return;
+      const x = (e.clientX / window.innerWidth - 0.5) * 20;
+      const y = (e.clientY / window.innerHeight - 0.5) * 20;
+      logoRef.current.style.transform = `translate(${x}px, ${y}px) rotate(${-2 + x / 10}deg)`;
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
 
   const handlePlaySelect = (play: Play) => {
     setSelectedPlay(play);
@@ -112,7 +117,7 @@ const App: React.FC = () => {
   const invitedGroups = AGRUPACIONES.slice(4);
 
   return (
-    <div className="min-h-screen selection:bg-magentaEnergy selection:text-offWhite bg-offWhite" onMouseMove={handleMouseMove}>
+    <div className="min-h-screen selection:bg-magentaEnergy selection:text-offWhite bg-offWhite">
       <Navigation currentPage={currentPage} setPage={setCurrentPage} />
 
       <main>
@@ -143,8 +148,9 @@ const App: React.FC = () => {
 
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-20">
                 <div
+                  ref={logoRef}
                   className="bg-offWhite p-10 md:p-16 border-8 border-midnight shadow-[12px_12px_0px_0px_#f59d2d] transform transition-transform duration-75 flex flex-col items-center"
-                  style={{ transform: `translate(${mousePos.x}px, ${mousePos.y}px) rotate(${-2 + mousePos.x / 10}deg)` }}
+                  style={{ transform: 'rotate(-2deg)' }}
                 >
                   <img src="/logo-ruta-teatro.png" alt="Ruta 2026 Logo" className="w-[300px] md:w-[600px] h-auto mb-8" />
 
@@ -243,7 +249,7 @@ const App: React.FC = () => {
                       onClick={() => handleAgrupacionSelect(group)}
                       className={`group relative cursor-pointer border-4 border-midnight overflow-hidden transition-all duration-500 hover:-translate-y-4 hover:shadow-[16px_16px_0px_0px_#2A3535] h-[500px] ${i % 2 !== 0 ? 'md:mt-12' : ''}`}
                     >
-                      <img src={group.image} className="absolute inset-0 w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110" alt="" />
+                      <img src={group.image} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110" alt="" />
                       <div className={`absolute inset-0 ${group.color} mix-blend-multiply opacity-0 group-hover:opacity-60 transition-opacity duration-500`} />
                       <div className="absolute inset-0 flex flex-col justify-end p-8 text-offWhite">
                         <div className="translate-y-12 group-hover:translate-y-0 transition-transform duration-500">
@@ -274,7 +280,7 @@ const App: React.FC = () => {
                           onClick={() => handleAgrupacionSelect(group)}
                           className={`group relative aspect-square cursor-pointer border-3 border-offWhite overflow-hidden transition-all duration-300 hover:rotate-1 hover:scale-105 active:scale-95 ${group.color.replace('bg-', 'bg-opacity-20 ')}`}
                         >
-                          <img src={group.image} className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" alt={group.name} />
+                          <img src={group.image} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" alt={group.name} />
                           <div className="absolute inset-0 bg-midnight/40 group-hover:bg-transparent transition-colors" />
 
                           <div className="absolute bottom-0 left-0 w-full p-4 bg-offWhite translate-y-full group-hover:translate-y-0 transition-transform duration-300 border-t-3 border-midnight">
@@ -573,6 +579,8 @@ const App: React.FC = () => {
                   src="/Mapa Ruta Teatro 220226.jpg"
                   alt="Mapa Ruta Teatro 2026"
                   className="w-full h-auto"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-midnight/0 group-hover:bg-midnight/20 transition-colors flex items-center justify-center">
                   <span className="opacity-0 group-hover:opacity-100 bg-midnight text-offWhite px-4 py-2 display-font font-black tracking-widest transition-opacity pointer-events-none">
