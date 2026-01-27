@@ -28,4 +28,4 @@ export interface Agrupacion {
   whatsapp: string; // Dedicated contact for bookings
 }
 
-export type Page = 'home' | 'billboard' | 'detail' | 'agrupacion_detail';
+export type Page = 'home' | 'billboard' | 'detail' | 'agrupacion_detail' | 'map';

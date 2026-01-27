@@ -2,6 +2,8 @@
 import React from 'react';
 import { Play, Agrupacion } from './types';
 
+export const CENTRAL_BOX_OFFICE_PHONE = '573229599258';
+
 export const AGRUPACIONES: Agrupacion[] = [
   // MAIN COLLECTIVES
   {
@@ -14,7 +16,7 @@ export const AGRUPACIONES: Agrupacion[] = [
     address: 'Calle 11 # 2-54, La Candelaria, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=Teatro+de+Occidente+Bogota',
     podcastUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    image: 'https://picsum.photos/seed/occidente/800/600?grayscale',
+    image: '/obras/agrupacion/teatro occidente shame.JPG',
     whatsapp: '573001112233'
   },
   {
@@ -27,7 +29,7 @@ export const AGRUPACIONES: Agrupacion[] = [
     address: 'Calle 3 # 1-05, La Candelaria, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=Casa+Tercer+Acto+Bogota',
     podcastUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    image: 'https://picsum.photos/seed/terceracto/800/600?grayscale',
+    image: '/obras/agrupacion/tercer-acto.png',
     whatsapp: '573004445566'
   },
   {
@@ -40,7 +42,7 @@ export const AGRUPACIONES: Agrupacion[] = [
     address: 'Carrera 13 # 51-24, Chapinero, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=Changua+Teatro+Bogota',
     podcastUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    image: 'https://picsum.photos/seed/changua/800/600?grayscale',
+    image: '/obras/agrupacion/changua teatro -  6 Kory y Kinu.jpeg',
     whatsapp: '573007778899'
   },
   {
@@ -53,22 +55,10 @@ export const AGRUPACIONES: Agrupacion[] = [
     address: 'Calle 12C # 3-10, Centro Histórico, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=Teatro+Vargastejada+Bogota',
     podcastUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    image: 'https://picsum.photos/seed/vargastejada/800/600?grayscale',
+    image: '/obras/agrupacion/Casa fuAmorío Postrero - Tapao bocachico.jpg',
     whatsapp: '573001234567'
   },
   // INVITED GROUPS
-  {
-    id: 'pepamamoncillo',
-    name: 'La Pepa del Mamoncillo',
-    description: 'Dedicada al teatro de títeres y a la animación de objetos con sensibilidad poética.',
-    fullHistory: 'La Pepa del Mamoncillo es una agrupación colombiana dedicada al teatro de títeres y a la animación de objetos, reconocida por la sensibilidad poética y el rigor artístico de sus montajes dirigidos a públicos infantiles y familiares. Su trabajo integra música en vivo, humor y una cuidada estética visual que invita a la imaginación y al juego.',
-    color: 'bg-salmonPink',
-    location: 'Teatro de la Montaña',
-    address: 'Vereda Verjon Bajo, Bogotá',
-    mapsLink: 'https://www.google.com/maps/search/?api=1&query=La+Pepa+del+Mamoncillo+Bogota',
-    image: 'https://picsum.photos/seed/pepa/800/600?grayscale',
-    whatsapp: '573101111111'
-  },
   {
     id: 'dcarte',
     name: 'DC Arte',
@@ -78,8 +68,20 @@ export const AGRUPACIONES: Agrupacion[] = [
     location: 'Parque de los Periodistas',
     address: 'Eje Ambiental, Avenida Jiménez con Carrera 3, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=Parque+de+los+Periodistas+Bogota',
-    image: 'https://picsum.photos/seed/dcarte/800/600?grayscale',
+    image: '/obras/EDITABLES DIA JUEVES 19_La cigarra portada.png',
     whatsapp: '573102222222'
+  },
+  {
+    id: 'objetoscubo',
+    name: 'Objetos al Cubo',
+    description: 'Investigación centrada en la creación de dramaturgias contemporáneas.',
+    fullHistory: 'Objetos al Cubo es un colectivo especializado en teatro de títeres y animación de objetos, con una investigación centrada en la creación de dramaturgias contemporáneas. Aborda temas como equidad e identidad.',
+    color: 'bg-bogotaTeal',
+    location: 'Usaquén',
+    address: 'Carrera 6 # 118-24, Bogotá',
+    mapsLink: 'https://www.google.com/maps/search/?api=1&query=Objetos+al+Cubo+Bogota',
+    image: '/obras/DIA DOMINGO 22_1. Armonía Musical Portada.png',
+    whatsapp: '573107777777'
   },
   {
     id: 'actogato',
@@ -90,7 +92,7 @@ export const AGRUPACIONES: Agrupacion[] = [
     location: 'Sala Concertada',
     address: 'Calle 70A # 11-29, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=ActoGato+Teatro+Bogota',
-    image: 'https://picsum.photos/seed/actogato/800/600?grayscale',
+    image: '/obras/DIA SABADO 21_1. Kory y Kynu Portada.png',
     whatsapp: '573103333333'
   },
   {
@@ -102,8 +104,32 @@ export const AGRUPACIONES: Agrupacion[] = [
     location: 'Parque Nacional',
     address: 'Calle 35 # 7-01, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=Parque+Nacional+Bogota',
-    image: 'https://picsum.photos/seed/nemka/800/600?grayscale',
+    image: '/obras/VIERNES 20_1. Memorial Portada.png',
     whatsapp: '573104444444'
+  },
+  {
+    id: 'taller406',
+    name: 'Taller 406 – RED 7',
+    description: 'Espacio de creación e investigación que articula formación and experimentación.',
+    fullHistory: 'Taller 406 – RED 7 es un espacio de creación e investigación escénica que articula procesos de formación, experimentación y producción teatral desde una lógica de laboratorio.',
+    color: 'bg-festPurple',
+    location: 'Sede Mártires',
+    address: 'Avenida Calle 19 # 15-24, Bogotá',
+    mapsLink: 'https://www.google.com/maps/search/?api=1&query=Taller+406+Bogota',
+    image: '/obras/DIA DOMINGO 22_1. Shame Portada.png',
+    whatsapp: '573109999999'
+  },
+  {
+    id: 'pepamamoncillo',
+    name: 'La Pepa del Mamoncillo',
+    description: 'Dedicada al teatro de títeres y a la animación de objetos con sensibilidad poética.',
+    fullHistory: 'La Pepa del Mamoncillo es una agrupación colombiana dedicada al teatro de títeres y a la animación de objetos, reconocida por la sensibilidad poética y el rigor artístico de sus montajes dirigidos a públicos infantiles y familiares. Su trabajo integra música en vivo, humor y una cuidada estética visual que invita a la imaginación y al juego.',
+    color: 'bg-salmonPink',
+    location: 'Teatro de la Montaña',
+    address: 'Vereda Verjon Bajo, Bogotá',
+    mapsLink: 'https://www.google.com/maps/search/?api=1&query=La+Pepa+del+Mamoncillo+Bogota',
+    image: '/obras/DIA JUEVES 19_Me lleva el diablo portada.png',
+    whatsapp: '573101111111'
   },
   {
     id: 'mereketengue',
@@ -114,7 +140,7 @@ export const AGRUPACIONES: Agrupacion[] = [
     location: 'Barrio Teusaquillo',
     address: 'Calle 39 # 16-12, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=Mereketengue+Teatro+Bogota',
-    image: 'https://picsum.photos/seed/mereke/800/600?grayscale',
+    image: '/obras/EDITABLES DIA JUEVES 19_Transmigración Portada.png',
     whatsapp: '573105555555'
   },
   {
@@ -126,20 +152,8 @@ export const AGRUPACIONES: Agrupacion[] = [
     location: 'Sede Fontibón',
     address: 'Calle 18 # 103-24, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=Croche+Titeres+Bogota',
-    image: 'https://picsum.photos/seed/croche/800/600?grayscale',
+    image: '/obras/DIA SABADO 21_1. Soledades Breves Portada.png',
     whatsapp: '573106666666'
-  },
-  {
-    id: 'objetoscubo',
-    name: 'Objetos al Cubo',
-    description: 'Investigación centrada en la creación de dramaturgias contemporáneas.',
-    fullHistory: 'Objetos al Cubo es un colectivo especializado en teatro de títeres y animación de objetos, con una investigación centrada en la creación de dramaturgias contemporáneas. Aborda temas como equidad e identidad.',
-    color: 'bg-bogotaTeal',
-    location: 'Usaquén',
-    address: 'Carrera 6 # 118-24, Bogotá',
-    mapsLink: 'https://www.google.com/maps/search/?api=1&query=Objetos+al+Cubo+Bogota',
-    image: 'https://picsum.photos/seed/cubo/800/600?grayscale',
-    whatsapp: '573107777777'
   },
   {
     id: 'araneus',
@@ -150,20 +164,8 @@ export const AGRUPACIONES: Agrupacion[] = [
     location: 'Engativá',
     address: 'Calle 64 # 110-24, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=Corporacion+Cultural+Araneus+Bogota',
-    image: 'https://picsum.photos/seed/ara/800/600?grayscale',
+    image: '/obras/DIA DOMINGO 22_1. El retorno del agua Portada.png',
     whatsapp: '573108888888'
-  },
-  {
-    id: 'taller406',
-    name: 'Taller 406 – RED 7',
-    description: 'Espacio de creación e investigación que articula formación and experimentación.',
-    fullHistory: 'Taller 406 – RED 7 es un espacio de creación e investigación escénica que articula procesos de formación, experimentación y producción teatral desde una lógica de laboratorio.',
-    color: 'bg-festPurple',
-    location: 'Sede Mártires',
-    address: 'Avenida Calle 19 # 15-24, Bogotá',
-    mapsLink: 'https://www.google.com/maps/search/?api=1&query=Taller+406+Bogota',
-    image: 'https://picsum.photos/seed/red7/800/600?grayscale',
-    whatsapp: '573109999999'
   }
 ];
 

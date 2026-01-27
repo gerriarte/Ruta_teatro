@@ -30,8 +30,13 @@ const Navigation: React.FC<Props> = ({ currentPage, setPage }) => {
         >
           CARTELERA
         </button>
-        <button className="display-font text-lg font-bold hover:text-festPurple transition-colors">MAPA</button>
-        <button className="display-font text-lg font-bold hover:text-salmonPink transition-colors">NOSOTROS</button>
+        <button
+          onClick={() => setPage('map')}
+          className={`display-font text-lg font-bold hover:text-festPurple transition-colors ${currentPage === 'map' ? 'underline decoration-bogotaTeal decoration-4' : ''}`}
+        >
+          MAPA
+        </button>
+
       </div>
 
       <button

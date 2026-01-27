@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import TicketCard from './components/TicketCard';
-import { PLAYS, AGRUPACIONES, EyeIcon, SmileIcon } from './constants';
+import { PLAYS, AGRUPACIONES, CENTRAL_BOX_OFFICE_PHONE, EyeIcon, SmileIcon } from './constants';
 import { Page, Play, Agrupacion } from './types';
 
 const Countdown: React.FC = () => {
@@ -61,6 +61,7 @@ const App: React.FC = () => {
   const [selectedAgrupacion, setSelectedAgrupacion] = useState<Agrupacion | null>(null);
   const [filterGenre, setFilterGenre] = useState<string>('ALL');
   const [filterDate, setFilterDate] = useState<string>('ALL');
+  const [isMapZoomed, setIsMapZoomed] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -86,8 +87,14 @@ const App: React.FC = () => {
     const group = AGRUPACIONES.find(g => g.id === play.collectiveId);
     if (!group) return;
 
-    const message = encodeURIComponent(`Hola ${group.name}, me gustaría reservar entradas para la obra "${play.title}" (${play.date} a las ${play.time}). Me interesa la opción: ${type}. ¿Cómo puedo proceder con el pago?`);
-    const whatsappUrl = `https://wa.me/${group.whatsapp}?text=${message}`;
+    const message = encodeURIComponent(`Hola, me gustaría reservar entradas para la obra "${play.title}" del grupo ${group.name} (${play.date} a las ${play.time}). Me interesa la opción: ${type}. ¿Cómo puedo proceder con el pago?`);
+    const whatsappUrl = `https://wa.me/${CENTRAL_BOX_OFFICE_PHONE}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const handleGeneralBooking = (product: string) => {
+    const message = encodeURIComponent(`Hola, estoy interesado en comprar: ${product}. ¿Cómo puedo proceder con el pago?`);
+    const whatsappUrl = `https://wa.me/${CENTRAL_BOX_OFFICE_PHONE}?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -115,10 +122,10 @@ const App: React.FC = () => {
             <section className="relative h-screen bg-midnight overflow-hidden flex flex-col md:flex-row border-b-6 border-midnight">
               <div className="flex-grow flex h-full">
                 {[
-                  { d: '19', name: 'JUEVES', color: 'bg-bogotaTeal', img: 'https://picsum.photos/seed/h1/600/1200?grayscale' },
-                  { d: '20', name: 'VIERNES', color: 'bg-festPurple', img: 'https://picsum.photos/seed/h2/600/1200?grayscale' },
-                  { d: '21', name: 'SÁBADO', color: 'bg-sunOrange', img: 'https://picsum.photos/seed/h3/600/1200?grayscale' },
-                  { d: '22', name: 'DOMINGO', color: 'bg-magentaEnergy', img: 'https://picsum.photos/seed/h4/600/1200?grayscale' }
+                  { d: '19', name: 'JUEVES', color: 'bg-bogotaTeal', img: AGRUPACIONES[0].image },
+                  { d: '20', name: 'VIERNES', color: 'bg-festPurple', img: AGRUPACIONES[1].image },
+                  { d: '21', name: 'SÁBADO', color: 'bg-sunOrange', img: AGRUPACIONES[2].image },
+                  { d: '22', name: 'DOMINGO', color: 'bg-magentaEnergy', img: AGRUPACIONES[3].image }
                 ].map((item, i) => (
                   <div
                     key={i}
@@ -195,7 +202,7 @@ const App: React.FC = () => {
                         <span className="display-font text-5xl font-black">$60.000</span>
                       </div>
                     </div>
-                    <button onClick={() => setCurrentPage('billboard')} className="mt-8 bg-sunOrange text-midnight w-full py-3 display-font font-black hover:bg-magentaEnergy hover:text-offWhite transition-colors">COMPRAR PASAPORTE</button>
+                    <button onClick={() => handleGeneralBooking("Pasaporte Centro-Periferia")} className="mt-8 bg-sunOrange text-midnight w-full py-3 display-font font-black hover:bg-magentaEnergy hover:text-offWhite transition-colors">COMPRAR PASAPORTE</button>
                   </div>
 
                   <div className="bg-bogotaTeal border-4 border-midnight p-8 flex flex-col justify-between hover:translate-x-2 hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_#2A3535]">
@@ -204,7 +211,9 @@ const App: React.FC = () => {
                       <p className="text-sm font-bold leading-tight mb-6 text-midnight/80">
                         Al adquirir 5 boletas para una misma función, el valor total es de $75.000. ¡Teatro para el parche completo!
                       </p>
-                      <span className="display-font text-5xl font-black text-midnight">$75.000</span>
+                      <button onClick={() => handleGeneralBooking("Promo Somos 5")} className="text-left w-full hover:bg-midnight/10 transition-colors p-2 -ml-2 rounded">
+                        <span className="display-font text-5xl font-black text-midnight underline decoration-midnight">$75.000</span>
+                      </button>
                     </div>
                     <div className="mt-8 border-t-2 border-midnight pt-4">
                       <p className="text-xs font-black uppercase text-midnight">Entrada que circula</p>
@@ -548,6 +557,67 @@ const App: React.FC = () => {
             </div>
           </div>
         )}
+
+        {currentPage === 'map' && (
+          <div className="animate-in fade-in duration-500 min-h-screen bg-offWhite flex flex-col items-center py-20 px-6">
+            <div className="max-w-5xl w-full">
+              <h1 className="display-font text-6xl md:text-8xl font-black mb-12 text-midnight text-center uppercase">
+                MAPA OFICIAL
+              </h1>
+
+              <div
+                className="group relative border-8 border-midnight p-2 bg-white shadow-[12px_12px_0px_0px_#2A3535] mb-12 rotate-1 hover:rotate-0 transition-transform duration-500 cursor-zoom-in"
+                onClick={() => setIsMapZoomed(true)}
+              >
+                <img
+                  src="/Mapa Ruta Teatro 220226.jpg"
+                  alt="Mapa Ruta Teatro 2026"
+                  className="w-full h-auto"
+                />
+                <div className="absolute inset-0 bg-midnight/0 group-hover:bg-midnight/20 transition-colors flex items-center justify-center">
+                  <span className="opacity-0 group-hover:opacity-100 bg-midnight text-offWhite px-4 py-2 display-font font-black tracking-widest transition-opacity pointer-events-none">
+                    AMPLIAR MAPA
+                  </span>
+                </div>
+              </div>
+
+              {/* Zoom Modal */}
+              {isMapZoomed && (
+                <div
+                  className="fixed inset-0 z-[100] bg-midnight/90 flex items-center justify-center p-4 md:p-8 animate-in fade-in duration-300"
+                  onClick={() => setIsMapZoomed(false)}
+                >
+                  <button
+                    onClick={() => setIsMapZoomed(false)}
+                    className="absolute top-4 right-4 md:top-8 md:right-8 text-offWhite hover:text-sunOrange transition-colors"
+                  >
+                    <svg className="w-12 h-12 drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12"></path></svg>
+                  </button>
+                  <img
+                    src="/Mapa Ruta Teatro 220226.jpg"
+                    alt="Mapa Ruta Teatro 2026 Full"
+                    className="max-w-full max-h-full object-contain shadow-2xl border-4 border-offWhite"
+                    onClick={(e) => e.stopPropagation()}
+                  />
+                </div>
+              )}
+
+              <div className="flex justify-center">
+                <button
+                  onClick={() => window.open('https://drive.google.com/file/d/1sT2OotBvbXU6cdiGRY0HHRgoie2So34m/view?usp=drive_link', '_blank')}
+                  className="bg-sunOrange text-midnight border-4 border-midnight px-12 py-6 display-font text-2xl md:text-4xl font-black hover:bg-magentaEnergy hover:text-offWhite transition-all hover:-translate-y-2 shadow-[8px_8px_0px_0px_#2A3535] flex items-center gap-4 group"
+                >
+                  <span>DESCARGAR PROGRAMA</span>
+                  <svg className="w-8 h-8 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </button>
+              </div>
+
+              <p className="mt-8 text-center text-midnight opacity-60 font-bold max-w-lg mx-auto">
+                * El programa está sujeto a cambios. Revisa nuestras redes sociales para las últimas actualizaciones.
+              </p>
+            </div>
+          </div>
+        )}
       </main>
 
       <footer className="bg-offWhite text-midnight px-6 py-20 border-t-6 border-midnight">
@@ -579,7 +649,7 @@ const App: React.FC = () => {
       <div className="bg-offWhite py-6 px-6 border-t border-midnight/10">
         <div className="max-w-7xl mx-auto flex justify-center">
           <p className="display-font text-[10px] md:text-xs font-bold text-midnight/40 tracking-[0.4em] text-center uppercase">
-            Diseño y Desarrollo - MTM Marca tu marca y A:BRA Latam
+            Diseño y Desarrollo - <a href="https://mtmmarcatumarca.com/" target="_blank" rel="noopener noreferrer" className="hover:text-midnight transition-colors">MTM Marca tu marca</a> y <a href="https://www.abralatam.com/es" target="_blank" rel="noopener noreferrer" className="hover:text-midnight transition-colors">A:BRA Latam</a>
           </p>
         </div>
       </div>
