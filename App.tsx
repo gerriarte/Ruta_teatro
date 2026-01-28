@@ -563,51 +563,51 @@ const App: React.FC = () => {
                   </div>
                 ) : (
                   <div className="bg-[#2A3535] text-offWhite p-8 border-4 border-midnight mb-12 shadow-[8px_8px_0px_0px_#12D1A0]">
-                    <h3 className="display-font text-3xl font-black mb-2 tracking-tighter">VALORES DE ENTRADA</h3>
+                    <h3 className="display-font text-3xl font-black mb-2 tracking-widest">VALORES DE ENTRADA</h3>
                     <hr className="border-offWhite/20 mb-6" />
 
                     <div className="space-y-4 mb-10">
                       <div className="border border-offWhite/20 p-4 flex justify-between items-center group cursor-pointer hover:bg-white/5 transition-all" onClick={() => handleWhatsAppBooking(selectedPlay, "Entrada General")}>
                         <div>
-                          <h4 className="display-font text-2xl font-black text-magentaEnergy leading-none">ENTRADA GENERAL</h4>
-                          <p className="text-[10px] font-bold opacity-70 uppercase tracking-wider mt-1">PÚBLICO MAYOR DE EDAD</p>
+                          <h4 className="display-font text-2xl font-black text-magentaEnergy leading-none tracking-widest">ENTRADA GENERAL</h4>
+                          <p className="text-[12px] font-bold opacity-70 uppercase tracking-widest mt-1">PÚBLICO MAYOR DE EDAD</p>
                         </div>
-                        <span className="display-font text-3xl font-black">$30.000</span>
+                        <span className="display-font text-3xl font-black tracking-widest">$30.000</span>
                       </div>
 
                       <div className="border border-offWhite/20 p-4 flex justify-between items-center group cursor-pointer hover:bg-white/5 transition-all" onClick={() => handleWhatsAppBooking(selectedPlay, "Entrada Estudiante/Adulto")}>
                         <div>
-                          <h4 className="display-font text-2xl font-black text-bogotaTeal leading-none">ESTUDIANTES / ADULTOS</h4>
-                          <p className="text-[10px] font-bold opacity-70 uppercase tracking-wider mt-1">PRESENTANDO EL CARNET O DOCUMENTO</p>
+                          <h4 className="display-font text-2xl font-black text-bogotaTeal leading-none tracking-widest">ESTUDIANTES / ADULTOS</h4>
+                          <p className="text-[12px] font-bold opacity-70 uppercase tracking-widest mt-1">PRESENTANDO EL CARNET O DOCUMENTO</p>
                         </div>
-                        <span className="display-font text-3xl font-black">$20.000</span>
+                        <span className="display-font text-3xl font-black tracking-widest">$20.000</span>
                       </div>
                     </div>
 
-                    <h3 className="display-font text-3xl font-black mb-2 tracking-tighter">COMBOS</h3>
+                    <h3 className="display-font text-3xl font-black mb-2 tracking-widest">COMBOS</h3>
                     <hr className="border-offWhite/20 mb-6" />
 
                     <div className="space-y-4 mb-10">
                       <div className="border border-offWhite/20 p-4 flex justify-between items-center group cursor-pointer hover:bg-white/5 transition-all" onClick={() => handleWhatsAppBooking(selectedPlay, "Promo Somos 5")}>
                         <div>
-                          <h4 className="display-font text-2xl font-black text-[#FD5A61] leading-none">SOMOS 5 (PROMO GRUPAL)</h4>
-                          <p className="text-[10px] font-bold opacity-70 uppercase tracking-wider mt-1">5 BOLETAS PARA ESTA FUNCIÓN</p>
+                          <h4 className="display-font text-2xl font-black text-[#FD5A61] leading-none tracking-widest">SOMOS 5 (PROMO GRUPAL)</h4>
+                          <p className="text-[12px] font-bold opacity-70 uppercase tracking-widest mt-1">5 BOLETAS PARA ESTA FUNCIÓN</p>
                         </div>
-                        <span className="display-font text-3xl font-black">$75.000</span>
+                        <span className="display-font text-3xl font-black tracking-widest">$75.000</span>
                       </div>
 
                       <div className="border border-offWhite/20 p-4 flex justify-between items-center group cursor-pointer hover:bg-white/5 transition-all" onClick={() => handleWhatsAppBooking(selectedPlay, "Pasaporte")}>
                         <div>
-                          <h4 className="display-font text-2xl font-black text-sunOrange leading-none">PASAPORTE CENTRO PERIFERIA</h4>
-                          <p className="text-[10px] font-bold opacity-70 uppercase tracking-wider mt-1">4 FUNCIONES DIFERENTES EN EL MISMO DÍA</p>
+                          <h4 className="display-font text-2xl font-black text-sunOrange leading-none tracking-widest">PASAPORTE CENTRO PERIFERIA</h4>
+                          <p className="text-[12px] font-bold opacity-70 uppercase tracking-widest mt-1">4 FUNCIONES DIFERENTES EN EL MISMO DÍA</p>
                         </div>
-                        <span className="display-font text-3xl font-black">$60.000</span>
+                        <span className="display-font text-3xl font-black tracking-widest">$60.000</span>
                       </div>
                     </div>
 
                     <button
                       onClick={() => handleWhatsAppBooking(selectedPlay, "Reserva Directa")}
-                      className="w-full bg-bogotaTeal text-midnight py-4 display-font text-2xl md:text-3xl font-black hover:bg-magentaEnergy hover:text-offWhite transition-colors shadow-[4px_4px_0px_0px_#1a2121] flex items-center justify-center gap-2"
+                      className="w-full bg-bogotaTeal text-midnight py-4 display-font text-2xl md:text-3xl font-black hover:bg-magentaEnergy hover:text-offWhite transition-colors shadow-[4px_4px_0px_0px_#1a2121] flex items-center justify-center gap-2 tracking-widest"
                     >
                       RESERVA EN WHATSAPP
                     </button>
