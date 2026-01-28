@@ -12,6 +12,7 @@ export interface Play {
   duration: string;
   ageRating: string;
   collectiveId: string; // Linked to Agrupacion
+  mapsLink?: string;
 }
 
 export interface Agrupacion {

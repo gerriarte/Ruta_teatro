@@ -10,25 +10,25 @@ export const AGRUPACIONES: Agrupacion[] = [
     id: 'occidente',
     name: 'Teatro de Occidente',
     description: 'Investigación constante sobre la dramaturgia contemporánea y el espacio inmersivo.',
-    fullHistory: 'Fundada en 2008, esta agrupación ha liderado procesos de experimentación en el centro de Bogotá. Su enfoque se centra en la relación actor-espectador y el uso de tecnologías sonoras para crear mundos inmersivos que desafían la percepción tradicional del teatro de sala.',
+    fullHistory: 'Con 27 años de trayectoria, Teatro de Occidente desarrolla una investigación escénica crítica y poética que transita entre lo clásico y lo contemporáneo. Desde 2013 gestiona El Espacio, una sala independiente que opera como laboratorio artístico y plataforma de circulación para múltiples colectivos. Su trabajo reflexiona sobre el cuerpo, la representación y la crisis de los lenguajes escénicos en la ciudad contemporánea.',
     color: 'bg-bogotaTeal',
     location: 'Sala El Espacio',
-    address: 'Calle 11 # 2-54, La Candelaria, Bogotá',
-    mapsLink: 'https://www.google.com/maps/search/?api=1&query=Teatro+de+Occidente+Bogota',
-    podcastUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    image: '/obras/agrupacion/teatro occidente shame.JPG',
+    address: 'Calle 25 # 9-43, Bogotá',
+    mapsLink: 'https://www.google.com/maps/place/%22El+Espacio%22+Teatro+Occidente/@4.611448,-74.0709313,21z/data=!4m15!1m8!3m7!1s0x8e3f9999541a5ce7:0x800892dfbd0b3fe3!2zQ2wuIDI1ICM5LTQzLCBCb2dvdMOh!3b1!8m2!3d4.6114799!4d-74.0708081!16s%2Fg%2F11s19qwh0n!3m5!1s0x8e3f9999514c6f5d:0x4cf4ca8276154ff7!8m2!3d4.6114799!4d-74.0708081!16s%2Fg%2F11c0psg6q3?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D',
+    podcastUrl: 'https://www.youtube.com/embed/dmwZA2hxMrA',
+    image: '/obras/Teatro-occidente -  el paseo de los esquizofrénicos.jpg',
     whatsapp: '573001112233'
   },
   {
     id: 'terceracto',
     name: 'Casa Tercer Acto',
     description: 'Foco en teatro infantil y títeres con un fuerte compromiso social y pedagógico.',
-    fullHistory: 'Referente de la localidad de La Candelaria, Casa Tercer Acto ha formado a generaciones de espectadores. Sus obras de títeres y teatro de objetos han recorrido festivales internacionales, llevando un mensaje de paz, ecología y resiliencia a través de la metáfora poética.',
+    fullHistory: 'Con más de quince años de trabajo comunitario, Tercer Acto tiene una fuerte presencia territorial en el barrio Lourdes. Su apuesta por el teatro, la comparsa y la formación de públicos se materializa en una sala con programación continua, accesible y cercana, donde el trueque, la conversación y el encuentro son parte esencial de la experiencia escénica.',
     color: 'bg-magentaEnergy',
-    location: 'Sede Candelaria',
+    location: 'Sede Centro',
     address: 'Calle 3 # 1-05, La Candelaria, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=Casa+Tercer+Acto+Bogota',
-    podcastUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    podcastUrl: 'https://www.youtube.com/embed/dmwZA2hxMrA',
     image: '/obras/agrupacion/tercer-acto.png',
     whatsapp: '573004445566'
   },
@@ -36,12 +36,12 @@ export const AGRUPACIONES: Agrupacion[] = [
     id: 'changua',
     name: 'Changua Teatro',
     description: 'Teatro mordante que explora las realidades cotidianas de Bogotá con humor y sátira.',
-    fullHistory: 'Changua nace de la necesidad de reírse de la tragedia bogotana. Con un estilo crudo pero hilarante, sus puestas en escena diseccionan la burocracia, el tráfico y las relaciones de poder en la capital, utilizando el lenguaje de la farsa y el realismo sucio.',
+    fullHistory: 'Con más de veinte años de trayectoria, la Corporación Changua es un referente de la experimentación escénica en Bogotá. Su trabajo cruza el teatro con el audiovisual, el radioteatro y la tecnología, construyendo dramaturgias contemporáneas que interpelan la manipulación de masas, la memoria y las formas actuales de relación humana. Desde 2014 cuenta con sala propia en el centro de la ciudad, que funciona como espacio de creación, exhibición y encuentro comunitario.',
     color: 'bg-sunOrange',
-    location: 'Sede Chapinero',
-    address: 'Carrera 13 # 51-24, Chapinero, Bogotá',
-    mapsLink: 'https://www.google.com/maps/search/?api=1&query=Changua+Teatro+Bogota',
-    podcastUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    location: 'Sede Calle 19',
+    address: 'Calle 19 # 4 – 71, Centro Comercial Los Ángeles, Local 309, Bogotá',
+    mapsLink: 'https://www.google.com/maps/place/Centro+Comercial+Los+%C3%81ngeles/@4.6037017,-74.072334,17z/data=!3m2!4b1!5s0x8e3f99a1ed0a6e39:0x7e82690a0b1299a8!4m6!3m5!1s0x8e3f99a3c9cbfb7f:0xbfa3582757f1af4d!8m2!3d4.6036964!4d-74.0697591!16s%2Fg%2F11r92d4nq?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D',
+    podcastUrl: 'https://www.youtube.com/embed/dmwZA2hxMrA',
     image: '/obras/agrupacion/changua teatro -  6 Kory y Kinu.jpeg',
     whatsapp: '573007778899'
   },
@@ -49,14 +49,27 @@ export const AGRUPACIONES: Agrupacion[] = [
     id: 'vargastejada',
     name: 'Teatro Vargastejada',
     description: 'Referente histórico del teatro de calle y la memoria viva en los parques de la ciudad.',
-    fullHistory: 'Con más de 30 años de trayectoria, Vargastejada es sinónimo de teatro popular. Sus grandes formatos de calle, con zancos, fuego y música en vivo, han convertido las plazas públicas en escenarios de reflexión histórica sobre la identidad colombiana y el Libertador Simón Bolívar.',
+    fullHistory: 'Organización autónoma fundada en 2014, dedicada al teatro de ficción histórica o “ficstoria”. Desde su sede en el barrio Egipto, Vargastejada investiga el siglo XIX colombiano para convertir la historia en una experiencia escénica viva, crítica y cercana. Su trabajo artesanal y su relación íntima con el espectador convierten cada función en un acto de reflexión política y comunitaria.',
     color: 'bg-festPurple',
     location: 'Casa de Fu',
     address: 'Calle 12C # 3-10, Centro Histórico, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=Teatro+Vargastejada+Bogota',
-    podcastUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    podcastUrl: 'https://www.youtube.com/embed/dmwZA2hxMrA',
     image: '/obras/agrupacion/Casa fuAmorío Postrero - Tapao bocachico.jpg',
     whatsapp: '573001234567'
+  },
+  {
+    id: 'usme',
+    name: 'Usme Proyecto Teatral',
+    description: 'Colectivo enfocado en la creación desde la ruralidad y el territorio.',
+    fullHistory: 'Colectivo especializado en teatro de calle y creación comunitaria, con más de diez años de trayectoria en procesos artísticos ligados a la memoria, el territorio y la soberanía cultural. Su trabajo en espacio público, con comparsas, personajes y formatos de gran impacto visual, garantiza que la ruta teatral dialogue directamente con la vida urbana y los transeúntes.',
+    color: 'bg-bogotaTeal',
+    location: 'CDC Lourdes',
+    address: 'Carrera 2 # 4 - 10, Bogotá',
+    mapsLink: 'https://www.google.com/maps/search/?api=1&query=CDC+Lourdes+Bogota',
+    podcastUrl: 'https://www.youtube.com/embed/dmwZA2hxMrA',
+    image: '/obras/agrupacion/usme-proyectos-Memorial 4.jpg',
+    whatsapp: '573109998877'
   },
   // INVITED GROUPS
   {
@@ -167,18 +180,7 @@ export const AGRUPACIONES: Agrupacion[] = [
     image: '/obras/DIA DOMINGO 22_1. El retorno del agua Portada.png',
     whatsapp: '573108888888'
   },
-  {
-    id: 'usme',
-    name: 'Usme Proyecto Teatral',
-    description: 'Colectivo enfocado en la creación desde la ruralidad y el territorio.',
-    fullHistory: 'Usme Proyecto Teatral es un colectivo que nace de la necesidad de narrar las historias de la ruralidad bogotana, específicamente de la localidad de Usme. Su trabajo se centra en la memoria, el territorio y la identidad campesina, tejiendo puentes entre el campo y la ciudad.',
-    color: 'bg-bogotaTeal',
-    location: 'CDC Lourdes',
-    address: 'Carrera 2 # 4 - 10, Bogotá',
-    mapsLink: 'https://www.google.com/maps/search/?api=1&query=CDC+Lourdes+Bogota',
-    image: '/obras/SABADO 21_1. Omarap Portada.png',
-    whatsapp: '573109998877'
-  }
+
 ];
 
 export const PLAYS: Play[] = [
@@ -192,7 +194,7 @@ export const PLAYS: Play[] = [
     genre: 'TÍTERES',
     image: '/obras/DIA JUEVES 19_Me lleva el diablo portada.png',
     color: 'bg-salmonPink',
-    description: 'Divertida historia de un diablo acorralado por chismes que pierde credibilidad y decide visitar al psicoanalista para recuperar su reputación.',
+    description: 'Es una divertida historia contada por títeres en la que el diablo se encuentra acorralado por malos comentarios de algunos habitantes de un lugar llamado puerto chisme, motivo por el cual pierde total credibilidad, ya a nadie asusta, hasta el niño más inocente se burla de él y lo chuza con su tridente, es así como el diablo decide visitar al psicoanalista, para recuperar su reputación y buen nombre en una campaña sin igual.',
     duration: '60 MIN',
     ageRating: 'TODO PÚBLICO'
   },
@@ -206,7 +208,7 @@ export const PLAYS: Play[] = [
     genre: 'CALLE / ZANCOS',
     image: '/obras/JUEVES 19_Memorial portada.png',
     color: 'bg-bogotaTeal',
-    description: 'Historia de una campesina que huye de la violencia y encuentra refugio en una casa abandonada. Una búsqueda de memoria en espacios de guerra.',
+    description: 'Memorial narra la historia de una campesina que huye de la violencia y se adentra en los bosques cercanos a Quipile, Cundinamarca. Al caer la noche, encuentra refugio en una casa abandonada donde se enfrenta a un pasado que no le pertenece, pero con el que se identifica profundamente, evocando las vivencias del lugar y sus propios recuerdos. La obra surge en 2016 como una búsqueda de la memoria en espacios atravesados por la guerra y se consolida como el lenguaje teatral de Nemkatacoa Teatro. A través de la musicalización, el uso de zancos, objetos, cuerpo y grabaciones de víctimas del conflicto armado, la puesta en escena construye imágenes que habitan una casa que quiere ser escuchada, un nido de memoria en la penumbra de la historia.',
     duration: '75 MIN',
     ageRating: '+12'
   },
@@ -220,7 +222,7 @@ export const PLAYS: Play[] = [
     genre: 'INFANTIL',
     image: '/obras/EDITABLES DIA JUEVES 19_La cigarra portada.png',
     color: 'bg-sunOrange',
-    description: 'Comunidad de insectos construye un pueblo libre. La cigarra debe cantar para salvar al pueblo de una invasión de sapos.',
+    description: 'Historia teatral, especialmente para niños, que cuenta la manera como una comunidad de insectos construye su pueblo libre y feliz, lejos del paso de hombres y animales grandes. En esta travesía la cigarra canta alegremente para alegrar a todo el pueblo, situación que genera envidia en el escarabajo, alcalde (bastante desafinado, por cierto) y que provoca la ira de este, hasta lograr llevarla presa para evitar su canto. El pueblo que está en silencio, se invade de sapos que quieren acabar con todos y comerse los insectos, ante esta situación lo único que queda como recurso es que la cigarra cante para dormir al sapo y luego hacerlo caer a un precipicio.',
     duration: '50 MIN',
     ageRating: 'TODO PÚBLICO'
   },
@@ -234,7 +236,7 @@ export const PLAYS: Play[] = [
     genre: 'DRAMA MÍSTICO',
     image: '/obras/EDITABLES DIA JUEVES 19_Transmigración Portada.png',
     color: 'bg-festPurple',
-    description: 'Viaje íntimo de una madre entre la reality y la trascendencia, reflexionando sobre la vida y la muerte.',
+    description: 'En el corazón de un bosque místico y sombrío, Transmigración se adentra en los confines del alma y el conflicto humano, desentrañando la esencia de la vida, la muerte y el impacto de la guerra en nuestra existencia. La historia gira en torno a una madre atrapada entre la realidad y la trascendencia, quien, frente a la devastación y la pérdida de sus hijos, emprende un viaje íntimo de dolor, memoria y reflexión sobre la vida después de la muerte y la naturaleza de la existencia.',
     duration: '70 MIN',
     ageRating: '+15'
   },
@@ -248,7 +250,7 @@ export const PLAYS: Play[] = [
     genre: 'FICSTORIA',
     image: '/obras/EDITABLES DIA JUEVES 19_Amorío Postrero Portada.png',
     color: 'bg-magentaEnergy',
-    description: 'Simón Bolívar llega a Honda repudiado y perseguido, encontrando el amor de su pueblo antes de partir definitivamente.',
+    description: 'En este montaje, Simón Bolívar, repudiado y perseguido, llega a Honda, donde el amor de su pueblo lo reconforta antes de partir definitivamente. La acción ocurre en los tres días que pasó el Libertador en ese puerto del río Magdalena, esperando los champanes que lo llevarían a su destierro.',
     duration: '80 MIN',
     ageRating: 'TODO PÚBLICO'
   },
@@ -262,9 +264,10 @@ export const PLAYS: Play[] = [
     genre: 'TEATRO DE CALLE',
     image: '/obras/VIERNES 20_1. Memorial Portada.png',
     color: 'bg-bogotaTeal',
-    description: 'Intervención escénica con zancos que rinde homenaje a las víctimas del conflicto.',
+    description: 'Memorial es una intervención escénica de teatro de calle y zancos que rinde homenaje a las víctimas del conflicto armado en Colombia. A través de una dramaturgia corporal de gran fuerza visual, música y acciones colectivas, la obra convoca al recuerdo, al duelo y a la resistencia, transformando el espacio urbano en un lugar de memoria activa. Memorial propone una reflexión profunda sobre la violencia, la dignidad y la capacidad humana de reconstrucción.',
     duration: '60 MIN',
-    ageRating: 'TODO PÚBLICO'
+    ageRating: 'TODO PÚBLICO',
+    mapsLink: 'https://www.google.com/maps/place/Cl.+19+%232A+10,+Santa+F%C3%A9,+Bogot%C3%A1,+Cundinamarca/@4.6028788,-74.0702081,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f99a372de39b3:0x2f8263460a418ef7!8m2!3d4.6028735!4d-74.0676332!16s%2Fg%2F11x7nht0hq?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D'
   },
   {
     id: 'bicho-20',
@@ -276,7 +279,7 @@ export const PLAYS: Play[] = [
     genre: 'FANTASÍA',
     image: '/obras/DIA VIERNES 20_1. El bicho de la Luz Portada.png',
     color: 'bg-sunOrange',
-    description: 'Floro el cocuyo es despojado de su luz por la Reina Hormiga.',
+    description: 'Margarita se prepara para su boda con Floro, mientras los habitantes del humedal celebran el acontecimiento. Sin embargo, Floro el cocuyo pierde su empleo de alumbrar los campos y, engañado por la Reina Hormiga y su secuaz el Hormigón, es despojado de su tesoro más valioso: la luz. Tras rechazar un mensaje de su amada y enfrentarse a su propia soberbia, Floro emprende un viaje lleno de pruebas para recuperar lo perdido. La obra, cargada de humor y fantasía, aborda temas como la responsabilidad, el poder y la conciencia sobre el uso de la energía.',
     duration: '65 MIN',
     ageRating: 'TODO PÚBLICO'
   },
@@ -290,7 +293,7 @@ export const PLAYS: Play[] = [
     genre: 'INMERSIVO',
     image: '/obras/DIA VIERNES 20_1. El paseo de los esquizofrenicos Portada.png',
     color: 'bg-festPurple',
-    description: 'Indagación escénica fragmentaria sobre la justicia y la vida interior de Jacobo Lenz.',
+    description: 'El paseo de los esquizofrénicos es una indagación escénica sobre la justicia a partir de la compleja vida interior de Jacobo Lenz, un poeta frustrado del siglo XIX cuya existencia fue retomada por Georg Büchner en su relato Lenz. La obra, construida de manera fragmentaria y en múltiples espacios, sumerge al público en un recorrido por los laberintos mentales del personaje y sus vínculos con Minna, Gaunny, Johan y Fausto, explorando la impotencia, la frustración y la violencia desde una experiencia teatral inmersiva y perturbadora.',
     duration: '90 MIN',
     ageRating: '+15'
   },
@@ -304,7 +307,7 @@ export const PLAYS: Play[] = [
     genre: 'FICSTORIA',
     image: '/obras/DIA VIERNES 20_1. Amorío Postrero Teatro - portada.png',
     color: 'bg-magentaEnergy',
-    description: 'En este montaje, Simón Bolívar, repudiado y perseguido, llega a Honda, donde el amor de su pueblo lo reconforta antes de partir definitivamente.',
+    description: 'En este montaje, Simón Bolívar, repudiado y perseguido, llega a Honda, donde el amor de su pueblo lo reconforta antes de partir definitivamente. La acción ocurre en los tres días que pasó el Libertador en ese puerto del río Magdalena, esperando los champanes que lo llevarían a su destierro.',
     duration: '80 MIN',
     ageRating: 'TODO PÚBLICO'
   },
@@ -318,7 +321,7 @@ export const PLAYS: Play[] = [
     genre: 'CONTEMPORÁNEO',
     image: '/obras/DIA VIERNES 20_1. Operación Cazafantasmas Portada.png',
     color: 'bg-softRose',
-    description: 'Reflexión aguda sobre el miedo y la manipulación mediática.',
+    description: 'Operación Cazafantasmas es una pieza didáctica y provocadora basada en las diez estrategias de manipulación mediática atribuidas erróneamente a Noam Chomsky y originalmente formuladas por el autor francés Sylvain Timsit. La obra, creada colectivamente, se sitúa en el contexto del estallido social de noviembre de 2019 y revisita la llamada “noche del ridículo”, cuando el miedo mediático llevó a la ciudadanía a organizarse ante una amenaza inexistente. Con ironía y agudeza, la pieza reflexiona sobre el miedo, la manipulación y el comportamiento colectivo en tiempos de crisis.',
     duration: '80 MIN',
     ageRating: '+12'
   },
@@ -332,9 +335,10 @@ export const PLAYS: Play[] = [
     genre: 'TÍTERES',
     image: '/obras/DIA SABADO 21_1. Kory y Kynu Portada.png',
     color: 'bg-softRose',
-    description: 'Historia de dos hermanos, uno arriesgado y otro competitivo, que deben salvar a su pueblo. Aborda el perdón y la responsabilidad.',
+    description: 'Kory y Kynu narra la historia de dos pequeños hermanos a quienes les encanta jugar. Mientras Kory es arriesgada y valiente, Kynu es tan competitivo que, en su afán por ganar, hace una promesa que no podrá cumplir, poniendo en peligro su vida y la de toda la aldea. Kory hará todo lo posible por rescatar a su hermano y salvar a su pueblo, encontrando en el camino seres fantásticos y cómplices inesperados. La obra aborda temas como el perdón, la amistad y la responsabilidad, y está narrada a través de la técnica de títeres peleles sobre mesa, con contrastes de color, juegos de luz y música que potencian la expresividad de los objetos animados.',
     duration: '60 MIN',
-    ageRating: 'TODO PÚBLICO'
+    ageRating: 'TODO PÚBLICO',
+    mapsLink: 'https://www.google.com/maps/place/Centro+Comercial+Los+%C3%81ngeles/@4.6037017,-74.072334,17z/data=!3m2!4b1!5s0x8e3f99a1ed0a6e39:0x7e82690a0b1299a8!4m6!3m5!1s0x8e3f99a3c9cbfb7f:0xbfa3582757f1af4d!8m2!3d4.6036964!4d-74.0697591!16s%2Fg%2F11r92d4nq?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D'
   },
   {
     id: 'omarap-21',
@@ -346,7 +350,7 @@ export const PLAYS: Play[] = [
     genre: 'RURAL / INFANTIL',
     image: '/obras/SABADO 21_1. Omarap Portada.png',
     color: 'bg-bogotaTeal',
-    description: 'Dos niños campesinos se adentran en el páramo de Sumapaz y aprenden sobre el territorio, el agua y la memoria con seres mágicos.',
+    description: 'Al escuchar que en el páramo de Sumapaz hubo una gran granizada, dos niños campesinos de la ruralidad bogotana no asisten a clases y deciden presenciar el fenómeno. Allí, la Mapalina los adentra entre nieblas y los lleva a perseguir a la última Soche que existe. En este viaje se encuentran con personajes pintorescos que habitan el páramo, de quienes aprenden sobre el territorio, reconociendo la importancia del agua, la familia, la defensa del territorio y los saberes heredados de sus padres.',
     duration: '60 MIN',
     ageRating: 'TODO PÚBLICO'
   },
@@ -360,7 +364,7 @@ export const PLAYS: Play[] = [
     genre: 'DRAMA',
     image: '/obras/DIA SABADO 21_1. Triada Portada.png',
     color: 'bg-sunOrange',
-    description: 'Obra sobre la toma del Palacio de Justicia. Relata las historias entrelazadas de un soldado, un guerrillero y un magistrado.',
+    description: 'La Tríada aborda la toma del Palacio de Justicia de Bogotá, ocurrida los días 5 y 6 de noviembre de 1985, como un hecho que partió con violencia la historia de Colombia. La obra se refleja en sus protagonistas: un joven soldado cuya única pretensión era abandonar la miseria en la que vivía; un guerrillero preso del amor de juventud; y un magistrado que, por cuestión de su oficio, se adentra en las fauces del infierno. A ellos se suma una víctima adicional: una madre, símbolo de todas las víctimas anónimas cuyo único vínculo con la tragedia es ser familiar de alguno de los protagonistas.',
     duration: '70 MIN',
     ageRating: '+12'
   },
@@ -374,7 +378,7 @@ export const PLAYS: Play[] = [
     genre: 'TÍTERES ADULTOS',
     image: '/obras/DIA SABADO 21_1. Soledades Breves Portada.png',
     color: 'bg-magentaEnergy',
-    description: 'Universo delirante de títeres para adultos. Dos piezas cortas ("Delirium Tremens" y "Cosco") sobre la soledad y la marginalidad.',
+    description: 'Soledades Breves es un universo delirante compuesto por dos piezas cortas de teatro de títeres y objetos para público adulto. La obra propone un brindis triste con historias cotidianas anónimas, atravesadas por las soledades que habitan a los seres humanos del mundo contemporáneo. La tristeza, la violencia y la desigualdad se articulan en una metáfora cruda y hermosa, posible gracias al lenguaje titeril, que permite a los personajes rozar la ternura y el dolor simultáneamente. La velada es acompañada por la presencia de un misterioso personaje del inframundo que también sufre y ríe la injusticia. La primera pieza, Delirium Tremens, presenta a “ÉL”, un personaje fragmentado que protagoniza su desayuno, desplegando una crítica al amor romántico y a una sociedad que devora y consume. La segunda pieza, Cosco, es el monólogo de un títere habitante de la calle que reflexiona sobre la existencia de los títeres y los humanos, poniendo en tensión el arte, la vida y la marginalidad.',
     duration: '60 MIN',
     ageRating: '+15'
   },
@@ -388,7 +392,7 @@ export const PLAYS: Play[] = [
     genre: 'INMERSIVO',
     image: '/obras/DIA SABADO 21_1. Esquizofrenicos Portada.png',
     color: 'bg-festPurple',
-    description: 'Indagación escénica sobre la justicia a partir de la vida interior del poeta Jacobo Lenz. Experiencia teatral inmersiva.',
+    description: 'El paseo de los esquizofrénicos es una indagación escénica sobre la justicia a partir de la compleja vida interior de Jacobo Lenz, un poeta frustrado del siglo XIX cuya existencia fue retomada por Georg Büchner en su relato Lenz. La obra, construida de manera fragmentaria y en múltiples espacios, sumerge al público en un recorrido por los laberintos mentales del personaje y sus vínculos con Minna, Gaunny, Johan y Fausto, explorando la impotencia, la frustración y la violencia desde una experiencia teatral inmersiva y perturbadora.',
     duration: '90 MIN',
     ageRating: '+15'
   },
@@ -402,9 +406,10 @@ export const PLAYS: Play[] = [
     genre: 'INFANTIL',
     image: '/obras/DIA DOMINGO 22_1. Armonía Musical Portada.png',
     color: 'bg-bogotaTeal',
-    description: 'En esta encantadora obra conocemos a Alegría, una niña-títere con un don especial para encontrar soluciones divertidas a las preguntas y acciones de los adultos, desafiando siempre el mal genio con su ingenio.',
+    description: 'En esta encantadora obra conocemos a Alegría, una niña-títere con un don especial para encontrar soluciones divertidas a las preguntas y acciones de los adultos, desafiando siempre el mal genio con su ingenio. La puesta en escena propone un juego teatral que integra música en vivo y teatro de títeres, construyendo una experiencia plástica y sensible que busca sorprender y emocionar al público.',
     duration: '50 MIN',
-    ageRating: 'TODO PÚBLICO'
+    ageRating: 'TODO PÚBLICO',
+    mapsLink: 'https://www.google.com/maps/place/Cl.+11+%231-06,+Bogot%C3%A1/@4.5948217,-74.0747319,17z/data=!4m10!1m2!2m1!1zQ2FsbGUgMTEgIyAxIOKAkyAwNg!3m6!1s0x8e3f99af231fa609:0xb0b1ecc7e779818a!8m2!3d4.5948164!4d-74.069861!15sChNDYWxsZSAxMSAjIDEg4oCTIDA2kgEKc3VicHJlbWlzZeABAA!16s%2Fg%2F11x7hqlplt?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D'
   },
   {
     id: 'retorno-22',
@@ -416,7 +421,7 @@ export const PLAYS: Play[] = [
     genre: 'FAMILIAR',
     image: '/obras/DIA DOMINGO 22_1. El retorno del agua Portada.png',
     color: 'bg-sunOrange',
-    description: 'Una pieza teatral inspirada en leyendas tradicionales que busca ser un llamado escénico para el cuidado y la conservación de nuestros recursos naturales, en especial el Agua.',
+    description: '"El Retorno del agua" es una pieza teatral inspirada en dos leyendas tradicionales de oriente que, por medio de la imagen poética, el movimiento y la fantasía busca ser llamado escénico para el cuidado y la conservación de nuestros recursos naturales, en especial el Agua como fuente de vida y equilibrio de nuestros ecosistemas. En el año del Dragón este espectáculo para el público en general se convierte en un mensaje para concientizarnos sobre las condiciones en que está nuestro planeta y hace un llamado a sumar las pequeñas acciones que pueden contribuir a la restauración y protección de nuestros territorios.',
     duration: '60 MIN',
     ageRating: 'TODO PÚBLICO'
   },
@@ -430,7 +435,7 @@ export const PLAYS: Play[] = [
     genre: 'RURAL / INFANTIL',
     image: '/obras/DOMINGO 22_1. Omarap Portada.png',
     color: 'bg-bogotaTeal',
-    description: 'Dos niños campesinos se adentran en el páramo de Sumapaz y aprenden sobre el territorio, el agua y la memoria con seres mágicos.',
+    description: 'Al escuchar que en el páramo de Sumapaz hubo una gran granizada, dos niños campesinos de la ruralidad bogotana no asisten a clases y deciden presenciar el fenómeno. Allí, la Mapalina los adentra entre nieblas y los lleva a perseguir a la última Soche que existe. En este viaje se encuentran con personajes pintorescos que habitan el páramo, de quienes aprenden sobre el territorio, reconociendo la importancia del agua, la familia, la defensa del territorio y los saberes heredados de sus padres.',
     duration: '60 MIN',
     ageRating: 'TODO PÚBLICO'
   },
@@ -444,7 +449,7 @@ export const PLAYS: Play[] = [
     genre: 'INMERSIVO',
     image: '/obras/DIA DOMINGO 22_1. Shame Portada.png',
     color: 'bg-festPurple',
-    description: 'Shame es una experiencia escénica inmersiva que explora la vergüenza como emoción íntima y social, revelando las fisuras entre lo visible y lo oculto.',
+    description: 'Shame es una experiencia escénica inmersiva que explora la vergüenza como emoción íntima y social. A través de paisajes sucesivos y un dispositivo In Situ, la obra articula cuerpo, sonido, imagen y objetos para revelar las fisuras entre lo visible y lo oculto, invitando al espectador a transitar los límites entre la vulnerabilidad personal y el espejo colectivo.',
     duration: '70 MIN',
     ageRating: '+15'
   },
@@ -458,7 +463,7 @@ export const PLAYS: Play[] = [
     genre: 'SÁTIRA',
     image: '/obras/DIA DOMINGO 22_1. Obra de interes Portada.png',
     color: 'bg-sunOrange',
-    description: 'Obra de Interés Social dibuja de forma extrema y mordaz la angustia de una ama de casa que espera ser favorecida en un programa de vivienda. Una sátira sobre las violencias cotidianas.',
+    description: 'Obra de Interés Social dibuja de forma extrema y mordaz la angustia de una ama de casa que espera ser favorecida en un programa de vivienda. A través de la relación con un agudo trabajador social denominado “Un tipo”, la puesta en escena conduce al espectador por las aguas del desespero, la humillación y la impotencia, revelando con ironía las violencias cotidianas del sistema.',
     duration: '65 MIN',
     ageRating: '+15'
   }

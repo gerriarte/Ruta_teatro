@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruta del Teatro 2026 - Bogotá</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
     <!-- Open Graph Metadata -->
     <meta property="og:title" content="Ruta del Teatro 2026 - Bogotá" />
     <meta property="og:description"
@@ -78,6 +79,22 @@
 
         .animate-marquee {
             animation: marquee 20s linear infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
         }
     </style>
     <script>

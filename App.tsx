@@ -113,8 +113,8 @@ const App: React.FC = () => {
     return matchesGenre && matchesDate;
   });
 
-  const mainCollectives = AGRUPACIONES.slice(0, 4);
-  const invitedGroups = AGRUPACIONES.slice(4);
+  const mainCollectives = AGRUPACIONES.slice(0, 5);
+  const invitedGroups = AGRUPACIONES.slice(5);
 
   return (
     <div className="min-h-screen selection:bg-magentaEnergy selection:text-offWhite bg-offWhite">
@@ -155,7 +155,7 @@ const App: React.FC = () => {
                   <img src="/logo-ruta-teatro.png" alt="Ruta 2026 Logo" className="w-[300px] md:w-[600px] h-auto mb-8" />
 
                   <div className="pointer-events-auto mt-4">
-                    <p className="text-xs font-black text-center text-midnight opacity-60 tracking-[0.3em]">LANZAMIENTO EN:</p>
+                    <p className="text-xs font-black text-center text-midnight opacity-60 tracking-[0.3em]">Inicio de presentaciones de circuito 3 en:</p>
                     <Countdown />
                   </div>
                 </div>
@@ -194,7 +194,10 @@ const App: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                    <p className="mt-8 text-sm font-bold opacity-60 italic">* Válido para una función en cualquier sala de la Alianza.</p>
+                    <div className="mt-8">
+                      <p className="text-sm font-bold opacity-60 italic mb-2">* Válido para una función en cualquier sala de la alianza.</p>
+                      <p className="text-sm font-black text-magentaEnergy uppercase">Ve a cartelera y elige la obra que quieras ver.</p>
+                    </div>
                   </div>
 
                   <div className="bg-midnight text-offWhite border-4 border-midnight p-8 flex flex-col justify-between hover:translate-x-2 hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_#e40b59]">
@@ -221,11 +224,15 @@ const App: React.FC = () => {
                         <span className="display-font text-5xl font-black text-midnight underline decoration-midnight">$75.000</span>
                       </button>
                     </div>
-                    <div className="mt-8 border-t-2 border-midnight pt-4">
-                      <p className="text-xs font-black uppercase text-midnight">Entrada que circula</p>
-                      <p className="text-[10px] font-bold text-midnight/70">Cualquier boleta puede donarse a instituciones educativas inscritas.</p>
-                    </div>
+                    <button onClick={() => handleGeneralBooking("Promo Somos 5")} className="mt-8 bg-midnight text-offWhite w-full py-3 display-font font-black hover:bg-magentaEnergy hover:text-offWhite transition-colors">COMPRAR PROMO</button>
+
                   </div>
+                </div>
+
+                <div className="mt-12 text-center border-t-4 border-midnight/10 pt-8">
+                  <p className="text-lg font-bold text-midnight/80">
+                    <span className="font-black uppercase text-midnight">★ ENTRADA QUE CIRCULA:</span> Cualquier boleta puede donarse a instituciones educativas inscritas.
+                  </p>
                 </div>
               </div>
             </section>
@@ -234,7 +241,7 @@ const App: React.FC = () => {
             <section className="px-6 py-24 bg-offWhite overflow-hidden">
               <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-                  <h2 className="display-font text-5xl md:text-8xl font-black leading-[0.85] tracking-tighter text-midnight">
+                  <h2 className="display-font text-5xl md:text-8xl font-black leading-[0.85] tracking-normal text-midnight">
                     NUESTROS <br /> <span className="text-magentaEnergy">COLECTIVOS</span>
                   </h2>
                   <p className="max-w-md font-bold text-lg opacity-60 border-l-4 border-sunOrange pl-6 text-midnight">
@@ -242,7 +249,7 @@ const App: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-32">
                   {mainCollectives.map((group, i) => (
                     <div
                       key={group.id}
@@ -255,7 +262,7 @@ const App: React.FC = () => {
                         <div className="translate-y-12 group-hover:translate-y-0 transition-transform duration-500">
                           <span className="display-font text-xs font-black bg-midnight text-offWhite px-2 py-1 mb-4 inline-block tracking-widest uppercase">{group.location}</span>
                           <h3 className="display-font text-4xl font-black leading-none mb-4 uppercase">{group.name}</h3>
-                          <p className="text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity delay-100 duration-500 line-clamp-3">
+                          <p className="text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity delay-100 duration-500">
                             {group.description}
                           </p>
                         </div>
@@ -387,8 +394,18 @@ const App: React.FC = () => {
                     </button>
                     <button
                       onClick={() => {
-                        const message = encodeURIComponent(`Hola ${selectedAgrupacion.name}, vi su perfil en la Ruta del Teatro 2026 y me interesa conocer más sobre su trabajo.`);
-                        window.open(`https://wa.me/${selectedAgrupacion.whatsapp}?text=${message}`, '_blank');
+                        if (selectedAgrupacion.id === 'terceracto') {
+                          window.open('https://terceracto.com/', '_blank');
+                        } else if (selectedAgrupacion.id === 'changua') {
+                          window.open('https://changuamedia.com/', '_blank');
+                        } else if (selectedAgrupacion.id === 'occidente') {
+                          window.open('https://www.instagram.com/teatro_occidente?igsh=MW1ieGo5bXBjc3R6aQ==', '_blank');
+                        } else if (selectedAgrupacion.id === 'vargastejada') {
+                          window.open('https://www.instagram.com/vargastejada_teatro_ficstorico?igsh=a3h0cm9ndXYzbGsx', '_blank');
+                        } else {
+                          const message = encodeURIComponent(`Hola ${selectedAgrupacion.name}, vi su perfil en la Ruta del Teatro 2026 y me interesa conocer más sobre su trabajo.`);
+                          window.open(`https://wa.me/${selectedAgrupacion.whatsapp}?text=${message}`, '_blank');
+                        }
                       }}
                       className="w-full bg-offWhite border-3 border-midnight text-midnight py-3 display-font text-xs font-black hover:bg-midnight hover:text-offWhite transition-colors"
                     >
@@ -480,6 +497,16 @@ const App: React.FC = () => {
                 </div>
               </div>
               <div className="lg:w-1/2 p-6 lg:p-20 flex flex-col justify-center">
+                <button
+                  onClick={() => {
+                    const group = AGRUPACIONES.find(g => g.id === selectedPlay.collectiveId);
+                    if (group) handleAgrupacionSelect(group);
+                  }}
+                  className="mb-8 flex items-center gap-2 text-xs font-black uppercase tracking-widest text-midnight/60 hover:text-magentaEnergy transition-colors"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M15 19l-7-7 7-7"></path></svg>
+                  VOLVER A LA AGRUPACIÓN
+                </button>
                 <span className="bg-midnight text-offWhite px-4 py-1 self-start display-font text-lg font-bold mb-4">{selectedPlay.genre}</span>
                 <h1 className="display-font text-5xl md:text-7xl font-black mb-8 leading-none text-midnight uppercase">{selectedPlay.title}</h1>
 
@@ -495,8 +522,12 @@ const App: React.FC = () => {
                     {/* Add Map Quicklink in Play Detail */}
                     <button
                       onClick={() => {
-                        const group = AGRUPACIONES.find(g => g.id === selectedPlay.collectiveId);
-                        if (group) window.open(group.mapsLink, '_blank');
+                        if (selectedPlay.mapsLink) {
+                          window.open(selectedPlay.mapsLink, '_blank');
+                        } else {
+                          const group = AGRUPACIONES.find(g => g.id === selectedPlay.collectiveId);
+                          if (group) window.open(group.mapsLink, '_blank');
+                        }
                       }}
                       className="mt-2 text-[10px] font-black text-magentaEnergy hover:underline uppercase tracking-widest flex items-center gap-1"
                     >
@@ -510,45 +541,63 @@ const App: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="bg-midnight text-offWhite p-8 border-4 border-midnight mb-12 shadow-[8px_8px_0px_0px_#f59d2d]">
-                  <h3 className="display-font text-2xl font-black mb-6 border-b-2 border-offWhite/20 pb-2">VALORES DE ENTRADA</h3>
-                  <div className="space-y-4 mb-8">
-                    <div className="flex justify-between items-center group cursor-pointer" onClick={() => handleWhatsAppBooking(selectedPlay, "Entrada General")}>
-                      <div>
-                        <p className="font-black text-sunOrange">ENTRADA GENERAL</p>
-                        <span className="text-[10px] opacity-60">Público Mayor de Edad</span>
-                      </div>
-                      <span className="display-font text-2xl font-black">$30.000</span>
-                    </div>
-                    <div className="flex justify-between items-center opacity-70 group cursor-pointer" onClick={() => handleWhatsAppBooking(selectedPlay, "Entrada Estudiante/Adulto")}>
-                      <div>
-                        <p className="font-black">ESTUDIANTES / ADULTOS MAYORES</p>
-                        <span className="text-[10px] opacity-60">Presentando carné o documento</span>
-                      </div>
-                      <span className="display-font text-2xl font-black">$20.000</span>
-                    </div>
-                    <div className="flex justify-between items-center bg-magentaEnergy/20 p-3 border-l-4 border-magentaEnergy group cursor-pointer" onClick={() => handleWhatsAppBooking(selectedPlay, "Promo Somos 5")}>
-                      <div>
-                        <p className="font-black text-magentaEnergy">SOMOS 5 (PROMO GRUPAL)</p>
-                        <span className="text-[10px] opacity-60 italic">5 boletas para esta función</span>
-                      </div>
-                      <span className="display-font text-2xl font-black">$75.000</span>
-                    </div>
+                {selectedPlay.genre.includes('CALLE') ? (
+                  <div className="bg-bogotaTeal text-midnight p-8 border-4 border-midnight mb-12 shadow-[8px_8px_0px_0px_#2A3535] text-center">
+                    <h3 className="display-font text-5xl font-black mb-4">ENTRADA LIBRE</h3>
+                    <p className="font-bold text-lg uppercase tracking-tight">Obra en espacio público / Teatro de calle</p>
+                    <p className="mt-4 text-sm font-bold opacity-80">No requiere reserva ni compra de boletería. ¡Te esperamos!</p>
                   </div>
+                ) : (
+                  <div className="bg-midnight text-offWhite p-8 border-4 border-midnight mb-12 shadow-[8px_8px_0px_0px_#f59d2d]">
+                    <h3 className="display-font text-2xl font-black mb-6 border-b-2 border-offWhite/20 pb-2">VALORES DE ENTRADA</h3>
+                    <div className="space-y-4 mb-8">
+                      <div className="flex justify-between items-center group cursor-pointer hover:bg-white/5 p-2 -mx-2 rounded transition-all duration-300" onClick={() => handleWhatsAppBooking(selectedPlay, "Entrada General")}>
+                        <div>
+                          <p className="font-black text-sunOrange group-hover:underline decoration-2 underline-offset-4 transition-all">ENTRADA GENERAL</p>
+                          <span className="text-[10px] opacity-60">Público Mayor de Edad</span>
+                        </div>
+                        <span className="display-font text-2xl font-black group-hover:scale-110 transition-transform">$30.000</span>
+                      </div>
 
-                  <div className="bg-offWhite/10 p-4 border border-dashed border-offWhite/30 mb-8">
-                    <p className="text-xs font-bold leading-tight uppercase">
-                      <span className="text-sunOrange">PASAPORTE CENTRO-PERIFERIA:</span> $60.000 / 4 funciones ($15.000 c/u).
-                    </p>
+                      <div className="flex justify-between items-center opacity-70 group cursor-pointer hover:opacity-100 hover:bg-white/5 p-2 -mx-2 rounded transition-all duration-300" onClick={() => handleWhatsAppBooking(selectedPlay, "Entrada Estudiante/Adulto")}>
+                        <div>
+                          <p className="font-black group-hover:underline decoration-2 underline-offset-4 transition-all">ESTUDIANTES / ADULTOS MAYORES</p>
+                          <span className="text-[10px] opacity-60">Presentando carné o documento</span>
+                        </div>
+                        <span className="display-font text-2xl font-black group-hover:scale-110 transition-transform">$20.000</span>
+                      </div>
+
+                      <div className="flex justify-between items-center bg-magentaEnergy/20 p-3 border-l-4 border-magentaEnergy group cursor-pointer hover:bg-magentaEnergy/30 transition-all duration-300" onClick={() => handleWhatsAppBooking(selectedPlay, "Promo Somos 5")}>
+                        <div>
+                          <p className="font-black text-magentaEnergy group-hover:underline decoration-2 underline-offset-4 transition-all uppercase">SOMOS 5 (PROMO GRUPAL)</p>
+                          <span className="text-[10px] opacity-60 italic">5 boletas para esta función</span>
+                        </div>
+                        <span className="display-font text-2xl font-black group-hover:scale-110 transition-transform">$75.000</span>
+                      </div>
+                    </div>
+
+                    <div
+                      className="bg-offWhite/10 p-4 border border-dashed border-offWhite/30 mb-8 cursor-pointer group hover:bg-white/20 transition-all duration-300"
+                      onClick={() => handleWhatsAppBooking(selectedPlay, "Pasaporte Centro-Periferia")}
+                    >
+                      <p className="text-xs font-bold leading-tight uppercase flex justify-between items-center">
+                        <span>
+                          <span className="text-sunOrange group-hover:underline decoration-2 underline-offset-4 transition-all font-black">PASAPORTE CENTRO-PERIFERIA:</span>
+                          <br />
+                          <span className="opacity-70">$60.000 / 4 funciones ($15.000 c/u)</span>
+                        </span>
+                        <span className="text-sunOrange font-black opacity-40 group-hover:opacity-100 transition-opacity">RESERVAR →</span>
+                      </p>
+                    </div>
+
+                    <button
+                      onClick={() => handleWhatsAppBooking(selectedPlay)}
+                      className="w-full bg-sunOrange border-3 border-midnight px-12 py-4 display-font text-2xl font-black text-midnight hover:bg-[#25D366] hover:text-white transition-colors flex items-center justify-center gap-4"
+                    >
+                      RESERVAR EN WHATSAPP
+                    </button>
                   </div>
-
-                  <button
-                    onClick={() => handleWhatsAppBooking(selectedPlay)}
-                    className="w-full bg-sunOrange border-3 border-midnight px-12 py-4 display-font text-2xl font-black text-midnight hover:bg-[#25D366] hover:text-white transition-colors flex items-center justify-center gap-4"
-                  >
-                    RESERVAR EN WHATSAPP
-                  </button>
-                </div>
+                )}
 
                 <div className="border-t-4 border-midnight pt-8 flex items-center gap-6">
                   <div className="w-16 h-16 rounded-full bg-bogotaTeal flex items-center justify-center shrink-0">
@@ -612,10 +661,10 @@ const App: React.FC = () => {
 
               <div className="flex justify-center">
                 <button
-                  onClick={() => window.open('https://drive.google.com/file/d/1sT2OotBvbXU6cdiGRY0HHRgoie2So34m/view?usp=drive_link', '_blank')}
+                  onClick={() => window.open('https://drive.google.com/file/d/1baeByEmVmNDxgAv1VHQdlV4sTDn-Mwfr/view', '_blank')}
                   className="bg-sunOrange text-midnight border-4 border-midnight px-12 py-6 display-font text-2xl md:text-4xl font-black hover:bg-magentaEnergy hover:text-offWhite transition-all hover:-translate-y-2 shadow-[8px_8px_0px_0px_#2A3535] flex items-center gap-4 group"
                 >
-                  <span>DESCARGAR PROGRAMA</span>
+                  <span>DESCARGAR PROGRAMACIÓN</span>
                   <svg className="w-8 h-8 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
                 </button>
               </div>
@@ -639,8 +688,21 @@ const App: React.FC = () => {
           <div className="flex flex-col gap-4">
             <h4 className="display-font text-2xl font-black text-midnight uppercase">REDES SOCIALES</h4>
             <div className="flex gap-4">
-              {['FB', 'IG', 'TW', 'YT'].map(social => (
-                <div key={social} className="w-12 h-12 border-3 border-midnight flex items-center justify-center display-font font-bold hover:bg-magentaEnergy hover:text-offWhite hover:border-magentaEnergy cursor-pointer transition-colors text-midnight">{social}</div>
+              {[
+                { name: 'FB', url: 'https://www.facebook.com/RutaTeatroBogota' },
+                { name: 'IG', url: 'https://www.instagram.com/rutateatrobogota' },
+                { name: 'TK', url: 'https://www.tiktok.com/@rutateatrobogota0' },
+                { name: 'YT', url: 'https://www.youtube.com/@RutaTeatralBogot%C3%A1' }
+              ].map(social => (
+                <a
+                  key={social.name}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 border-3 border-midnight flex items-center justify-center display-font font-bold hover:bg-magentaEnergy hover:text-offWhite hover:border-magentaEnergy cursor-pointer transition-colors text-midnight"
+                >
+                  {social.name}
+                </a>
               ))}
             </div>
           </div>
@@ -659,6 +721,18 @@ const App: React.FC = () => {
           <p className="display-font text-[10px] md:text-xs font-bold text-midnight/40 tracking-[0.4em] text-center uppercase">
             Diseño y Desarrollo - <a href="https://mtmmarcatumarca.com/" target="_blank" rel="noopener noreferrer" className="hover:text-midnight transition-colors">MTM Marca tu marca</a> y <a href="https://www.abralatam.com/es" target="_blank" rel="noopener noreferrer" className="hover:text-midnight transition-colors">A:BRA Latam</a>
           </p>
+        </div>
+      </div>
+      {/* FLOATING FAVICON */}
+      <div className="fixed bottom-8 right-8 z-[100] pointer-events-none">
+        <div className="relative group">
+          <div className="absolute inset-0 bg-magentaEnergy rounded-full scale-110 blur-md opacity-20 group-hover:opacity-40 transition-opacity" />
+          <img
+            src="/favicon.png"
+            alt="Ruta del Teatro"
+            className="relative w-16 h-16 md:w-20 md:h-20 drop-shadow-2xl animate-float pointer-events-auto cursor-pointer border-4 border-midnight rounded-full bg-offWhite p-2 hover:scale-110 transition-transform duration-300"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          />
         </div>
       </div>
     </div>

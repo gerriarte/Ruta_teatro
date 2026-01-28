@@ -9,7 +9,7 @@ interface Props {
 
 const TicketCard: React.FC<Props> = ({ play, onClick }) => {
   return (
-    <div 
+    <div
       onClick={onClick}
       className="ticket-cutout relative flex w-full border-3 border-midnight bg-offWhite cursor-pointer hover:border-magentaEnergy transition-colors group mb-6"
     >
@@ -19,18 +19,18 @@ const TicketCard: React.FC<Props> = ({ play, onClick }) => {
         <div className="w-8 h-1 bg-midnight my-2"></div>
         <span className="display-font text-xs font-bold">{play.time}</span>
       </div>
-      
+
       <div className="flex-grow p-6 flex flex-col justify-center">
         <h3 className="display-font text-2xl md:text-3xl font-black group-hover:text-magentaEnergy transition-colors">
           {play.title}
         </h3>
         <p className="text-lg font-semibold text-midnight/70">{play.venue}</p>
       </div>
-      
+
       <div className="hidden md:flex w-48 border-l-3 border-dashed border-midnight p-6 flex-col items-center justify-center gap-2">
         <span className="bg-midnight text-offWhite px-3 py-1 text-xs font-bold">{play.genre}</span>
         <button className="bg-sunOrange border-3 border-midnight px-4 py-1 display-font text-xs font-black">
-          ENTRADA $30k
+          {play.genre.includes('CALLE') ? 'GRATIS' : 'ENTRADA $30k'}
         </button>
       </div>
     </div>
