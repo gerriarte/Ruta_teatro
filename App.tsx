@@ -230,7 +230,7 @@ const App: React.FC = () => {
                 <div className="animate-marquee inline-block">
                   {[...Array(10)].map((_, i) => (
                     <span key={i} className="display-font text-2xl font-black text-offWhite mx-8">
-                      BOGOTÁ ES UN ESCENARIO • BOGOTÁ IS A STAGE •
+                      BOGOTÁ ES UN ESCENARIO • BOGOTÁ IS A STAGE • DEL 19 AL 22 DE FEBRERO •
                     </span>
                   ))}
                 </div>
