@@ -76,6 +76,63 @@ const App: React.FC = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
+  useEffect(() => {
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const playId = params.get('play');
+      const groupId = params.get('group');
+      let page = (params.get('page') as Page) || 'home';
+
+      // Auto-determine page if IDs are present but page is wrong
+      if (playId && page !== 'detail') page = 'detail';
+      if (groupId && page !== 'agrupacion_detail') page = 'agrupacion_detail';
+
+      setCurrentPage(page);
+
+      if (playId) {
+        const play = PLAYS.find(p => p.id === playId);
+        if (play) setSelectedPlay(play);
+      } else {
+        setSelectedPlay(null);
+      }
+
+      if (groupId) {
+        const group = AGRUPACIONES.find(g => g.id === groupId);
+        if (group) setSelectedAgrupacion(group);
+      } else {
+        setSelectedAgrupacion(null);
+      }
+    };
+
+    // Initial load
+    handlePopState();
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  // Sync state to URL
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (currentPage !== 'home') params.set('page', currentPage);
+    if (selectedPlay) params.set('play', selectedPlay.id);
+    if (selectedAgrupacion) params.set('group', selectedAgrupacion.id);
+
+    const newUrl = params.toString() ? `?${params.toString()}` : window.location.pathname;
+
+    // Only push if different to avoid redundant history entries
+    if (window.location.search !== `?${params.toString()}` && (params.toString() || window.location.search)) {
+      window.history.pushState({}, '', newUrl);
+    }
+  }, [currentPage, selectedPlay, selectedAgrupacion]);
+
+  const handlePageChange = (page: Page) => {
+    setCurrentPage(page);
+    if (page !== 'detail') setSelectedPlay(null);
+    if (page !== 'agrupacion_detail') setSelectedAgrupacion(null);
+    window.scrollTo(0, 0);
+  };
+
   const handlePlaySelect = (play: Play) => {
     setSelectedPlay(play);
     setCurrentPage('detail');
@@ -118,7 +175,7 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen selection:bg-magentaEnergy selection:text-offWhite bg-offWhite">
-      <Navigation currentPage={currentPage} setPage={setCurrentPage} />
+      <Navigation currentPage={currentPage} setPage={handlePageChange} />
 
       <main>
         {currentPage === 'home' && (
@@ -134,7 +191,7 @@ const App: React.FC = () => {
                 ].map((item, i) => (
                   <div
                     key={i}
-                    onClick={() => { setFilterDate(`FEB ${item.d}`); setCurrentPage('billboard'); }}
+                    onClick={() => { setFilterDate(`FEB ${item.d}`); handlePageChange('billboard'); }}
                     className={`relative flex-1 group cursor-pointer overflow-hidden border-r-3 border-midnight transition-all duration-500 ease-out hover:flex-[1.5] ${item.color}`}
                   >
                     <img src={item.img} className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 transition-opacity duration-500 mix-blend-multiply" alt="" />
