@@ -29,7 +29,7 @@ export const AGRUPACIONES: Agrupacion[] = [
     address: 'Calle 3 # 1-05, La Candelaria, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=Casa+Tercer+Acto+Bogota',
     podcastUrl: 'https://www.youtube.com/embed/dmwZA2hxMrA',
-    image: '/obras/agrupacion/tercer-acto.png',
+    image: '/obras/Tercer acto - El bicho de la luz  (3).jpg',
     whatsapp: '573004445566'
   },
   {
@@ -42,7 +42,7 @@ export const AGRUPACIONES: Agrupacion[] = [
     address: 'Calle 19 # 4 – 71, Centro Comercial Los Ángeles, Local 309, Bogotá',
     mapsLink: 'https://www.google.com/maps/place/Centro+Comercial+Los+%C3%81ngeles/@4.6037017,-74.072334,17z/data=!3m2!4b1!5s0x8e3f99a1ed0a6e39:0x7e82690a0b1299a8!4m6!3m5!1s0x8e3f99a3c9cbfb7f:0xbfa3582757f1af4d!8m2!3d4.6036964!4d-74.0697591!16s%2Fg%2F11r92d4nq?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D',
     podcastUrl: 'https://www.youtube.com/embed/dmwZA2hxMrA',
-    image: '/obras/agrupacion/changua teatro -  6 Kory y Kinu.jpeg',
+    image: '/obras/changua-teatro - Operaciขn Cazafantasmas 3.jpeg',
     whatsapp: '573007778899'
   },
   {
@@ -68,7 +68,7 @@ export const AGRUPACIONES: Agrupacion[] = [
     address: 'Carrera 2 # 4 - 10, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=CDC+Lourdes+Bogota',
     podcastUrl: 'https://www.youtube.com/embed/dmwZA2hxMrA',
-    image: '/obras/agrupacion/usme-proyectos-Memorial 4.jpg',
+    image: '/obras/Usme teatro - Omarap 1.jpg',
     whatsapp: '573109998877'
   },
   // INVITED GROUPS
