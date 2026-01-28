@@ -62,6 +62,7 @@ const App: React.FC = () => {
   const [filterGenre, setFilterGenre] = useState<string>('ALL');
   const [filterDate, setFilterDate] = useState<string>('ALL');
   const [isMapZoomed, setIsMapZoomed] = useState(false);
+  const [showWelcome, setShowWelcome] = useState(true);
   const logoRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -74,6 +75,13 @@ const App: React.FC = () => {
 
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowWelcome(false);
+    }, 30000);
+    return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
@@ -744,6 +752,32 @@ const App: React.FC = () => {
               <p className="mt-8 text-center text-midnight opacity-60 font-bold max-w-lg mx-auto">
                 * El programa está sujeto a cambios. Revisa nuestras redes sociales para las últimas actualizaciones.
               </p>
+            </div>
+          </div>
+        )}
+        {/* Floating Welcome Message */}
+        {showWelcome && (
+          <div className="fixed bottom-24 right-6 left-6 md:left-auto md:w-[400px] z-[100] animate-in slide-in-from-bottom-10 fade-in duration-500">
+            <div className="bg-midnight text-offWhite p-6 border-4 border-midnight shadow-[8px_8px_0px_0px_#12D1A0] relative group">
+              <button
+                onClick={() => setShowWelcome(false)}
+                className="absolute -top-4 -right-4 bg-magentaEnergy text-offWhite w-8 h-8 rounded-full flex items-center justify-center border-2 border-midnight hover:scale-110 transition-transform shadow-[2px_2px_0px_0px_#2A3535]"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12"></path></svg>
+              </button>
+              <div className="flex gap-4 items-start">
+                <div className="bg-sunOrange p-2 shrink-0 border-2 border-midnight">
+                  <SmileIcon />
+                </div>
+                <div>
+                  <p className="display-font text-xl md:text-2xl font-black leading-tight tracking-widest text-sunOrange mb-2">
+                    ¡HOLA TEATRERO!
+                  </p>
+                  <p className="font-bold text-sm md:text-base leading-tight uppercase tracking-widest opacity-90">
+                    BIENVENIDO AL CIRCUITO 3 DE LA RUTA TEATRO DE BOGOTÁ 2026; AGÉNDATE CON TUS AMIGOS O FAMILIA Y DISFRUTA DE TEATRO DEL 19 AL 22.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         )}
