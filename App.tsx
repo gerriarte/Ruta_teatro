@@ -697,7 +697,7 @@ const App: React.FC = () => {
             <div className="mb-8">
               <img src="/logo-ruta-teatro.png" alt="Ruta Teatro Logo" className="h-[60px] w-auto" />
             </div>
-            <p className="text-lg opacity-70 font-bold">El festival de teatro más grande de Bogotá. Celebrando 14 años de historia. Del 19 al 22 de febrero, 2026.</p>
+            <p className="text-lg opacity-70 font-bold">Festival de Teatro de Bogotá 2026. Del 19 al 22 de Febrero.</p>
           </div>
           <div className="flex flex-col gap-4">
             <h4 className="display-font text-2xl font-black text-midnight uppercase">REDES SOCIALES</h4>
