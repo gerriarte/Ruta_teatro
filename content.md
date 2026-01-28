@@ -4,14 +4,14 @@ El teatro como tránsito, territorio y encuentro: una ruta escénica que desbord
 Centro–Periferia: Desbordamiento Escénico y Polifonías del Territorio
 Ruta Teatral en Santa Fe y La Candelaria
 Del jueves 19 al domingo 22 de febrero de 2026 | Bogotá
-Centro–Periferia: Desbordamiento Escénico y Polifonías del Territorio es una ruta teatral viva que articula salas independientes, un colectivo de teatro de calle y espacios públicos de las localidades de Santa Fe y La Candelaria, construyendo un circuito en red que desborda los límites tradicionales del teatro para volverlo encuentro, tránsito y experiencia compartida. La alianza está conformada por la Changua Teatro, Teatro de Occidente, Teatro Vargastejada, Teatro Tercer Acto y Usme Proyecto Teatral, cinco agentes con trayectorias sólidas y lenguajes diversos que, desde sus sedes y territorios, proponen una programación continua de funciones en sala y en calle, acompañada por intervenciones escénicas itinerantes que conectan geográficamente los espacios, activan la ciudad y convocan al espectador desde la cotidianidad del territorio. La propuesta se sostiene sobre un eje curatorial común: el tratamiento del espacio como materia dramática, la relación íntima y horizontal con el público y la creación de relatos con profundo sentido político, social y pedagógico. A través de una parrilla diversa —que incluye teatro de sala, teatro de calle, títeres, performance, teatro expandido y comparsa— y de un cronograma diseñado para distintos momentos del día y públicos, la ruta garantiza el acceso, la circulación y la permanencia de nuevos espectadores, transformando al público en comunidad dialogante. Más que una suma de funciones, la ruta Centro–Periferia propone una nueva geografía teatral: un mapa afectivo y cultural donde las salas se reconocen entre sí, el espacio público se vuelve escenario y el teatro recupera su potencia como acto colectivo, cercano y necesario en la vida urbana.
+Centro–Periferia: Desbordamiento Escénico y Polifonías del Territorio es una ruta teatral viva que articula salas independientes, un colectivo de teatro de calle y espacios públicos de las localidades de Santa Fe y La Candelaria, construyendo un circuito en red que desborda los límites tradicionales del teatro para volverlo encuentro, tránsito y experiencia compartida. La alianza está conformada por la Changua Teatro, Teatro Occidente, Teatro Vargastejada, Teatro Tercer Acto y Usme Proyecto Teatral, cinco agentes con trayectorias sólidas y lenguajes diversos que, desde sus sedes y territorios, proponen una programación continua de funciones en sala y en calle, acompañada por intervenciones escénicas itinerantes que conectan geográficamente los espacios, activan la ciudad y convocan al espectador desde la cotidianidad del territorio. La propuesta se sostiene sobre un eje curatorial común: el tratamiento del espacio como materia dramática, la relación íntima y horizontal con el público y la creación de relatos con profundo sentido político, social y pedagógico. A través de una parrilla diversa —que incluye teatro de sala, teatro de calle, títeres, performance, teatro expandido y comparsa— y de un cronograma diseñado para distintos momentos del día y públicos, la ruta garantiza el acceso, la circulación y la permanencia de nuevos espectadores, transformando al público en comunidad dialogante. Más que una suma de funciones, la ruta Centro–Periferia propone una nueva geografía teatral: un mapa afectivo y cultural donde las salas se reconocen entre sí, el espacio público se vuelve escenario y el teatro recupera su potencia como acto colectivo, cercano y necesario en la vida urbana.
 
 LOS TEATROS Y COLECTIVOS QUE CONFORMAN LA ALIANZA
 Changua Teatro
 Con más de veinte años de trayectoria, la Corporación Changua es un referente de la experimentación escénica en Bogotá. Su trabajo cruza el teatro con el audiovisual, el radioteatro y la tecnología, construyendo dramaturgias contemporáneas que interpelan la manipulación de masas, la memoria y las formas actuales de relación humana. Desde 2014 cuenta con sala propia en el centro de la ciudad, que funciona como espacio de creación, exhibición y encuentro comunitario.
 
-Teatro de Occidente
-Con 27 años de trayectoria, Teatro de Occidente desarrolla una investigación escénica crítica y poética que transita entre lo clásico y lo contemporáneo. Desde 2013 gestiona El Espacio, una sala independiente que opera como laboratorio artístico y plataforma de circulación para múltiples colectivos. Su trabajo reflexiona sobre el cuerpo, la representación y la crisis de los lenguajes escénicos en la ciudad contemporánea.
+Teatro Occidente
+Con 27 años de trayectoria, Teatro Occidente desarrolla una investigación escénica crítica y poética que transita entre lo clásico y lo contemporáneo. Desde 2013 gestiona El Espacio, una sala independiente que opera como laboratorio artístico y plataforma de circulación para múltiples colectivos. Su trabajo reflexiona sobre el cuerpo, la representación y la crisis de los lenguajes escénicos en la ciudad contemporánea.
 Teatro Vargastejada
 
 Organización autónoma fundada en 2014, dedicada al teatro de ficción histórica o “ficstoria”. Desde su sede en el barrio Egipto, Vargastejada investiga el siglo XIX colombiano para convertir la historia en una experiencia escénica viva, crítica y cercana. Su trabajo artesanal y su relación íntima con el espectador convierten cada función en un acto de reflexión política y comunitaria.
@@ -51,7 +51,7 @@ Taller 406 – RED 7
 Taller 406 – RED 7 es un espacio de creación e investigación escénica que articula procesos de formación, experimentación y producción teatral. Su trabajo se desarrolla desde una lógica de laboratorio, donde el cuerpo, la dramaturgia y el territorio se cruzan como ejes de investigación. A través del intercambio artístico y comunitario, el colectivo fortalece prácticas colaborativas dentro del ecosistema teatral independiente.
 CRONOGRAMA · JUEVES 19 DE FEBRERO DE 2026
 11:00 a.m.
-Sala “El Espacio” – Teatro de Occidente
+Sala “El Espacio” – Teatro Occidente
 Calle 25 N° 9 – 43
 Agrupación: La Pepa del Mamoncillo
 Obra: Me lleva el diablo
@@ -101,9 +101,9 @@ Obra: Bicho de la luz
 Margarita se prepara para su boda con Floro, mientras los habitantes del humedal celebran el acontecimiento. Sin embargo, Floro el cocuyo pierde su empleo de alumbrar los campos y, engañado por la Reina Hormiga y su secuaz el Hormigón, es despojado de su tesoro más valioso: la luz. Tras rechazar un mensaje de su amada y enfrentarse a su propia soberbia, Floro emprende un viaje lleno de pruebas para recuperar lo perdido. La obra, cargada de humor y fantasía, aborda temas como la responsabilidad, el poder y la conciencia sobre el uso de la energía.
 
 5:00 p.m.
-Sala “El Espacio” – Teatro de Occidente
+Sala “El Espacio” – Teatro Occidente
 Calle 25 # 9 – 43
-Agrupación: Teatro de Occidente
+Agrupación: Teatro Occidente
 Obra: El paseo de los esquizofrénicos
 El paseo de los esquizofrénicos es una indagación escénica sobre la justicia a partir de la compleja vida interior de Jacobo Lenz, un poeta frustrado del siglo XIX cuya existencia fue retomada por Georg Büchner en su relato Lenz. La obra, construida de manera fragmentaria y en múltiples espacios, sumerge al público en un recorrido por los laberintos mentales del personaje y sus vínculos con Minna, Gaunny, Johan y Fausto, explorando la impotencia, la frustración y la violencia desde una experiencia teatral inmersiva y perturbadora.
 
@@ -151,9 +151,9 @@ Obra: Soledades Breves
 Soledades Breves es un universo delirante compuesto por dos piezas cortas de teatro de títeres y objetos para público adulto. La obra propone un brindis triste con historias cotidianas anónimas, atravesadas por las soledades que habitan a los seres humanos del mundo contemporáneo. La tristeza, la violencia y la desigualdad se articulan en una metáfora cruda y hermosa, posible gracias al lenguaje titeril, que permite a los personajes rozar la ternura y el dolor simultáneamente. La velada es acompañada por la presencia de un misterioso personaje del inframundo que también sufre y ríe la injusticia. La primera pieza, Delirium Tremens, presenta a “ÉL”, un personaje fragmentado que protagoniza su desayuno, desplegando una crítica al amor romántico y a una sociedad que devora y consume. La segunda pieza, Cosco, es el monólogo de un títere habitante de la calle que reflexiona sobre la existencia de los títeres y los humanos, poniendo en tensión el arte, la vida y la marginalidad.
 
 7:00 p.m.
-Sala “El Espacio” – Teatro de Occidente
+Sala “El Espacio” – Teatro Occidente
 Calle 25 # 9 – 43
-Agrupación: Teatro de Occidente
+Agrupación: Teatro Occidente
 Obra: El paseo de los esquizofrénicos
 El paseo de los esquizofrénicos es una indagación escénica sobre la justicia a partir de la compleja vida interior de Jacobo Lenz, un poeta frustrado del siglo XIX cuya existencia fue retomada por Georg Büchner en su relato Lenz. La obra, construida de manera fragmentaria y en múltiples espacios, sumerge al público en un recorrido por los laberintos mentales del personaje y sus vínculos con Minna, Gaunny, Johan y Fausto, explorando la impotencia, la frustración y la violencia desde una experiencia teatral inmersiva y perturbadora.
 
@@ -183,7 +183,7 @@ Sinopsis:
 Al escuchar que en el páramo de Sumapaz hubo una gran granizada, dos niños campesinos de la ruralidad bogotana no asisten a clases y deciden presenciar el fenómeno. Allí, la Mapalina los adentra entre nieblas y los lleva a perseguir a la última Soche que existe. En este viaje se encuentran con personajes pintorescos que habitan el páramo, de quienes aprenden sobre el territorio, reconociendo la importancia del agua, la familia, la defensa del territorio y los saberes heredados de sus padres.
 
 3:00 p.m.
-Sala “El Espacio” – Teatro de Occidente
+Sala “El Espacio” – Teatro Occidente
 Calle 25 # 9 – 43
 Agrupación: Taller 406 – RED 7
 Obra: Shame. Figuras / Fisuras
@@ -239,7 +239,7 @@ Sábado 21 de febrero – 11:00 a.m.
  Obra: Kory y Kynu
 
 Domingo 22 de febrero – 3:00 p.m.
- Sala “El Espacio” – Teatro de Occidente
+ Sala “El Espacio” – Teatro Occidente
  Calle 25 # 9 – 43
  Agrupación: Taller 406 – RED 7
  Obra: Shame. Figuras / Fisuras
@@ -250,7 +250,7 @@ INFORMACIÓN CLAVE PARA MEDIOS
 Evento: Centro–Periferia: Desbordamiento Escénico y Polifonías del Territorio
 Fechas: Jueves 19 al domingo 22 de febrero de 2026
 Lugar: Localidades de Santa Fe y La Candelaria – Bogotá
-Organiza: Alianza de salas independientes: Changua Teatro, Teatro de Occidente, Teatro Vargastejada, Teatro Tercer Acto y Usme Proyecto Teatral
+Organiza: Alianza de salas independientes: Changua Teatro, Teatro Occidente, Teatro Vargastejada, Teatro Tercer Acto y Usme Proyecto Teatral
 Redes sociales: @teatro_occidente, @changuaproducciones, @teatroterceracto, @vargastejada_teatro_ficstoria, @usmeproyectoteatral, @lapepadelmamoncillo, @taller_406, @objetosalcubo, @crochetiteres, @teatronemcatacoa, @mereketengueteatro, @actogatoteatro, @dcartecorporacion.
 
 Contacto para prensa y programación:
