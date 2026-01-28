@@ -64,7 +64,7 @@ export const AGRUPACIONES: Agrupacion[] = [
     description: 'Colectivo enfocado en la creación desde la ruralidad y el territorio.',
     fullHistory: 'Colectivo especializado en teatro de calle y creación comunitaria, con más de diez años de trayectoria en procesos artísticos ligados a la memoria, el territorio y la soberanía cultural. Su trabajo en espacio público, con comparsas, personajes y formatos de gran impacto visual, garantiza que la ruta teatral dialogue directamente con la vida urbana y los transeúntes.',
     color: 'bg-bogotaTeal',
-    location: 'CDC Lourdes',
+    location: 'Teatro de Calle',
     address: 'Carrera 2 # 4 - 10, Bogotá',
     mapsLink: 'https://www.google.com/maps/search/?api=1&query=CDC+Lourdes+Bogota',
     podcastUrl: 'https://www.youtube.com/embed/dmwZA2hxMrA',

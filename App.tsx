@@ -317,7 +317,7 @@ const App: React.FC = () => {
                     {selectedAgrupacion.name}
                   </h1>
                   <p className="display-font text-xl font-bold bg-midnight text-offWhite inline-block px-4 py-2">
-                    BOGOTÁ • {selectedAgrupacion.location}
+                    {selectedAgrupacion.id === 'usme' ? selectedAgrupacion.location : `BOGOTÁ • ${selectedAgrupacion.location}`}
                   </p>
                 </div>
                 <div className="lg:w-1/2">
