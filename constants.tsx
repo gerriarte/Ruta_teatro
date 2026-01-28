@@ -289,7 +289,7 @@ export const PLAYS: Play[] = [
     title: 'EL PASEO DE LOS ESQUIZOFRÉNICOS',
     venue: 'Sala El Espacio – Teatro de Occidente',
     date: 'FEB 20',
-    time: '5:00 PM',
+    time: '4:00 PM',
     genre: 'INMERSIVO',
     image: '/obras/DIA VIERNES 20_1. El paseo de los esquizofrenicos Portada.png',
     color: 'bg-festPurple',
