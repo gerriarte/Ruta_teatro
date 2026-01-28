@@ -59,8 +59,8 @@ const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<Page>('home');
   const [selectedPlay, setSelectedPlay] = useState<Play | null>(null);
   const [selectedAgrupacion, setSelectedAgrupacion] = useState<Agrupacion | null>(null);
-  const [filterGenre, setFilterGenre] = useState<string>('ALL');
-  const [filterDate, setFilterDate] = useState<string>('ALL');
+  const [filterGenre, setFilterGenre] = useState<string>('Todos');
+  const [filterDate, setFilterDate] = useState<string>('Todos');
   const [isMapZoomed, setIsMapZoomed] = useState(false);
   const [showWelcome, setShowWelcome] = useState(true);
   const logoRef = useRef<HTMLDivElement>(null);
@@ -168,13 +168,13 @@ const App: React.FC = () => {
     window.open(whatsappUrl, '_blank');
   };
 
-  const genres = ['ALL', ...new Set(PLAYS.map(p => p.genre))];
+  const genres = ['Todos', ...new Set(PLAYS.map(p => p.genre))];
   const festivalDates = ['FEB 19', 'FEB 20', 'FEB 21', 'FEB 22'];
   const dayNamesShort = ['JUE', 'VIE', 'SÁB', 'DOM'];
 
   const filteredPlays = PLAYS.filter(p => {
-    const matchesGenre = filterGenre === 'ALL' || p.genre === filterGenre;
-    const matchesDate = filterDate === 'ALL' || p.date === filterDate;
+    const matchesGenre = filterGenre === 'Todos' || p.genre === filterGenre;
+    const matchesDate = filterDate === 'Todos' || p.date === filterDate;
     return matchesGenre && matchesDate;
   });
 
@@ -494,8 +494,8 @@ const App: React.FC = () => {
                   <h3 className="display-font text-xl font-black mb-4">FECHA DEL FESTIVAL</h3>
                   <div className="flex gap-2">
                     <button
-                      onClick={() => setFilterDate('ALL')}
-                      className={`px-4 py-4 border-3 display-font font-black transition-all border-midnight ${filterDate === 'ALL' ? 'bg-midnight text-offWhite' : 'bg-offWhite'}`}
+                      onClick={() => setFilterDate('Todos')}
+                      className={`px-4 py-4 border-3 display-font font-black transition-all border-midnight ${filterDate === 'Todos' ? 'bg-midnight text-offWhite' : 'bg-offWhite'}`}
                     >
                       TODOS
                     </button>
@@ -530,7 +530,7 @@ const App: React.FC = () => {
               </div>
             </header>
             <div className="space-y-12">
-              {festivalDates.filter(d => filterDate === 'ALL' || d === filterDate).map(date => {
+              {festivalDates.filter(d => filterDate === 'Todos' || d === filterDate).map(date => {
                 const datePlays = filteredPlays.filter(p => p.date === date);
                 if (datePlays.length === 0) return null;
                 return (
