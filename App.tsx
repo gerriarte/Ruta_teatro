@@ -392,25 +392,27 @@ const App: React.FC = () => {
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
                       GOOGLE MAPS
                     </button>
-                    <button
-                      onClick={() => {
-                        if (selectedAgrupacion.id === 'terceracto') {
-                          window.open('https://terceracto.com/', '_blank');
-                        } else if (selectedAgrupacion.id === 'changua') {
-                          window.open('https://changuamedia.com/', '_blank');
-                        } else if (selectedAgrupacion.id === 'occidente') {
-                          window.open('https://www.instagram.com/teatro_occidente?igsh=MW1ieGo5bXBjc3R6aQ==', '_blank');
-                        } else if (selectedAgrupacion.id === 'vargastejada') {
-                          window.open('https://www.instagram.com/vargastejada_teatro_ficstorico?igsh=a3h0cm9ndXYzbGsx', '_blank');
-                        } else {
-                          const message = encodeURIComponent(`Hola ${selectedAgrupacion.name}, vi su perfil en la Ruta del Teatro 2026 y me interesa conocer más sobre su trabajo.`);
-                          window.open(`https://wa.me/${selectedAgrupacion.whatsapp}?text=${message}`, '_blank');
-                        }
-                      }}
-                      className="w-full bg-offWhite border-3 border-midnight text-midnight py-3 display-font text-xs font-black hover:bg-midnight hover:text-offWhite transition-colors"
-                    >
-                      CONTACTAR COLECTIVO
-                    </button>
+                    {mainCollectives.some(m => m.id === selectedAgrupacion.id) && (
+                      <button
+                        onClick={() => {
+                          if (selectedAgrupacion.id === 'terceracto') {
+                            window.open('https://terceracto.com/', '_blank');
+                          } else if (selectedAgrupacion.id === 'changua') {
+                            window.open('https://changuamedia.com/', '_blank');
+                          } else if (selectedAgrupacion.id === 'occidente') {
+                            window.open('https://www.instagram.com/teatro_occidente?igsh=MW1ieGo5bXBjc3R6aQ==', '_blank');
+                          } else if (selectedAgrupacion.id === 'vargastejada') {
+                            window.open('https://www.instagram.com/vargastejada_teatro_ficstorico?igsh=a3h0cm9ndXYzbGsx', '_blank');
+                          } else {
+                            const message = encodeURIComponent(`Hola ${selectedAgrupacion.name}, vi su perfil en la Ruta del Teatro 2026 y me interesa conocer más sobre su trabajo.`);
+                            window.open(`https://wa.me/${selectedAgrupacion.whatsapp}?text=${message}`, '_blank');
+                          }
+                        }}
+                        className="w-full bg-offWhite border-3 border-midnight text-midnight py-3 display-font text-xs font-black hover:bg-midnight hover:text-offWhite transition-colors"
+                      >
+                        CONTACTAR COLECTIVO
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>

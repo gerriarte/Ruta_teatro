@@ -6,7 +6,6 @@ Ruta Teatral en Santa Fe y La Candelaria
 Del jueves 19 al domingo 22 de febrero de 2026 | Bogotá
 Centro–Periferia: Desbordamiento Escénico y Polifonías del Territorio es una ruta teatral viva que articula salas independientes, un colectivo de teatro de calle y espacios públicos de las localidades de Santa Fe y La Candelaria, construyendo un circuito en red que desborda los límites tradicionales del teatro para volverlo encuentro, tránsito y experiencia compartida. La alianza está conformada por la Changua Teatro, Teatro de Occidente, Teatro Vargastejada, Teatro Tercer Acto y Usme Proyecto Teatral, cinco agentes con trayectorias sólidas y lenguajes diversos que, desde sus sedes y territorios, proponen una programación continua de funciones en sala y en calle, acompañada por intervenciones escénicas itinerantes que conectan geográficamente los espacios, activan la ciudad y convocan al espectador desde la cotidianidad del territorio. La propuesta se sostiene sobre un eje curatorial común: el tratamiento del espacio como materia dramática, la relación íntima y horizontal con el público y la creación de relatos con profundo sentido político, social y pedagógico. A través de una parrilla diversa —que incluye teatro de sala, teatro de calle, títeres, performance, teatro expandido y comparsa— y de un cronograma diseñado para distintos momentos del día y públicos, la ruta garantiza el acceso, la circulación y la permanencia de nuevos espectadores, transformando al público en comunidad dialogante. Más que una suma de funciones, la ruta Centro–Periferia propone una nueva geografía teatral: un mapa afectivo y cultural donde las salas se reconocen entre sí, el espacio público se vuelve escenario y el teatro recupera su potencia como acto colectivo, cercano y necesario en la vida urbana.
 
-
 LOS TEATROS Y COLECTIVOS QUE CONFORMAN LA ALIANZA
 Changua Teatro
 Con más de veinte años de trayectoria, la Corporación Changua es un referente de la experimentación escénica en Bogotá. Su trabajo cruza el teatro con el audiovisual, el radioteatro y la tecnología, construyendo dramaturgias contemporáneas que interpelan la manipulación de masas, la memoria y las formas actuales de relación humana. Desde 2014 cuenta con sala propia en el centro de la ciudad, que funciona como espacio de creación, exhibición y encuentro comunitario.
@@ -22,20 +21,27 @@ Con más de quince años de trabajo comunitario, Tercer Acto tiene una fuerte pr
 
 Usme Proyecto Teatral
 Colectivo especializado en teatro de calle y creación comunitaria, con más de diez años de trayectoria en procesos artísticos ligados a la memoria, el territorio y la soberanía cultural. Su trabajo en espacio público, con comparsas, personajes y formatos de gran impacto visual, garantiza que la ruta teatral dialogue directamente con la vida urbana y los transeúntes.
+
 AGRUPACIONES INVITADAS:
+
 La Pepa del Mamoncillo
 La Pepa del Mamoncillo es una agrupación colombiana dedicada al teatro de títeres y a la animación de objetos, reconocida por la sensibilidad poética y el rigor artístico de sus montajes dirigidos a públicos infantiles y familiares. Su trabajo integra música en vivo, humor y una cuidada estética visual que invita a la imaginación y al juego. A través de narrativas accesibles y profundamente humanas, el grupo construye experiencias escénicas que dialogan con la memoria, la emoción y la tradición oral.
+
 DC Arte
 DC Arte es una corporación escénica con amplia trayectoria en el teatro de calle y la intervención del espacio público, pionera en la creación de espectáculos que transforman la ciudad en escenario. Su propuesta combina formación artística, comparsa, teatro comunitario y producción escénica, con un fuerte compromiso social y territorial. Desde una mirada crítica y participativa, DC Arte concibe el arte como una herramienta de encuentro ciudadano y construcción colectiva.
+
 Colectivo ActoGato Teatro
 ActoGato Teatro es un colectivo dedicado al teatro de títeres y la animación de objetos, enfocado en la creación de universos poéticos que dialogan con públicos diversos. Su trabajo se caracteriza por una estética delicada, narrativas sensibles y un enfoque pedagógico que promueve la imaginación, el cuidado y la reflexión. A través de historias íntimas y visualmente potentes, el colectivo convierte cada función en una experiencia cercana y significativa.
 
 Teatro Nemktacoa
 Teatro Nemkatacoa es una reconocida agrupación de teatro de calle especializada en el trabajo con zancos, con una sólida trayectoria nacional e internacional. Sus montajes transforman plazas, calles y espacios abiertos en escenarios dinámicos donde el cuerpo, la arquitectura y el territorio dialogan constantemente. Con un alto impacto visual y una dramaturgia física poderosa, Nemkatacoa propone espectáculos que convocan a públicos amplios y diversos.
+
  Mereketengue Teatro
 Mereketengue Teatro es una agrupación que apuesta por la creación contemporánea y la exploración de lenguajes escénicos híbridos. Sus propuestas se caracterizan por una mirada crítica sobre la realidad social, combinando juego escénico, dramaturgia y una fuerte presencia actoral. El grupo desarrolla montajes dirigidos principalmente a públicos juveniles y adultos, generando espacios de reflexión desde una escena cercana y comprometida.
+
 Croché Títeres
 Croché Títeres es una agrupación dedicada al teatro de títeres y objetos, con una línea de trabajo enfocada en la memoria, el territorio y la narración simbólica. Sus creaciones se distinguen por una estética artesanal y una puesta en escena sensible, que invita a la contemplación y al pensamiento crítico. A través de relatos poéticos y formatos íntimos, el grupo construye experiencias escénicas de gran profundidad emocional.
+
 Objetos al Cubo
 Objetos al Cubo es un colectivo especializado en teatro de títeres y animación de objetos, con una investigación centrada en la creación de dramaturgias contemporáneas. Su trabajo aborda temas como la equidad, la identidad y el empoderamiento, especialmente desde una mirada de género. Con propuestas visualmente cuidadas y cercanas al espectador, el grupo fortalece el vínculo entre escena y público desde formatos sensibles y reflexivos.
 Corporación Cultural Araneus
