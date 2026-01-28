@@ -758,7 +758,7 @@ const App: React.FC = () => {
         {/* Floating Welcome Message */}
         {showWelcome && (
           <div className="fixed bottom-24 right-6 left-6 md:left-auto md:w-[400px] z-[100] animate-in slide-in-from-bottom-10 fade-in duration-500">
-            <div className="bg-midnight text-offWhite p-6 border-4 border-midnight shadow-[8px_8px_0px_0px_#12D1A0] relative group">
+            <div className="bg-[#12D1A0] text-midnight p-6 border-4 border-midnight shadow-[8px_8px_0px_0px_#2A3535] relative group">
               <button
                 onClick={() => setShowWelcome(false)}
                 className="absolute -top-4 -right-4 bg-magentaEnergy text-offWhite w-8 h-8 rounded-full flex items-center justify-center border-2 border-midnight hover:scale-110 transition-transform shadow-[2px_2px_0px_0px_#2A3535]"
@@ -766,11 +766,11 @@ const App: React.FC = () => {
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12"></path></svg>
               </button>
               <div className="flex gap-4 items-start">
-                <div className="bg-sunOrange p-2 shrink-0 border-2 border-midnight">
+                <div className="bg-midnight p-2 shrink-0 border-2 border-midnight">
                   <SmileIcon />
                 </div>
                 <div>
-                  <p className="display-font text-xl md:text-2xl font-black leading-tight tracking-widest text-sunOrange mb-2">
+                  <p className="display-font text-xl md:text-2xl font-black leading-tight tracking-widest text-midnight mb-2">
                     ¡HOLA TEATRERO!
                   </p>
                   <p className="font-bold text-sm md:text-base leading-tight uppercase tracking-widest opacity-90">
