@@ -766,7 +766,7 @@ const App: React.FC = () => {
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12"></path></svg>
               </button>
               <div className="flex gap-4 items-start">
-                <div className="bg-midnight p-2 shrink-0 border-2 border-midnight">
+                <div className="shrink-0 text-midnight">
                   <SmileIcon />
                 </div>
                 <div>
