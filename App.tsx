@@ -829,18 +829,20 @@ const App: React.FC = () => {
           </p>
         </div>
       </div>
-      {/* FLOATING FAVICON */}
-      <div className="fixed bottom-8 right-8 z-[100] pointer-events-none">
-        <div className="relative group">
-          <div className="absolute inset-0 bg-magentaEnergy rounded-full scale-110 blur-md opacity-20 group-hover:opacity-40 transition-opacity" />
-          <img
-            src="/favicon.png"
-            alt="Ruta del Teatro"
-            className="relative w-16 h-16 md:w-20 md:h-20 drop-shadow-2xl animate-float pointer-events-auto cursor-pointer border-4 border-midnight rounded-full bg-offWhite p-2 hover:scale-110 transition-transform duration-300"
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          />
+      {/* FLOATING FAVICON - SYNCED WITH WELCOME MESSAGE */}
+      {showWelcome && (
+        <div className="fixed bottom-8 right-8 z-[100] pointer-events-none">
+          <div className="relative group">
+            <div className="absolute inset-0 bg-magentaEnergy rounded-full scale-110 blur-md opacity-20 group-hover:opacity-40 transition-opacity" />
+            <img
+              src="/favicon.png"
+              alt="Ruta del Teatro"
+              className="relative w-16 h-16 md:w-20 md:h-20 drop-shadow-2xl animate-float pointer-events-auto cursor-pointer border-4 border-midnight rounded-full bg-offWhite p-2 hover:scale-110 transition-transform duration-300"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            />
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
