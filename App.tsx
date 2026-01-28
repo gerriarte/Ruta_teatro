@@ -549,6 +549,18 @@ const App: React.FC = () => {
                     <p className="font-bold text-lg uppercase tracking-tight">Obra en espacio público / Teatro de calle</p>
                     <p className="mt-4 text-sm font-bold opacity-80">No requiere reserva ni compra de boletería. ¡Te esperamos!</p>
                   </div>
+                ) : selectedPlay.isBarter ? (
+                  <div className="bg-sunOrange text-midnight p-8 border-4 border-midnight mb-12 shadow-[8px_8px_0px_0px_#2A3535] text-center">
+                    <h3 className="display-font text-5xl font-black mb-4 uppercase">ENTRADA POR TRUEQUE</h3>
+                    <p className="font-black text-lg uppercase tracking-tight mb-4">EL PAGO DE ESTA OBRA ES POR TRUEQUE</p>
+                    <p className="text-sm font-bold opacity-80 mb-6">Trae un aporte significativo para intercambiar por tu entrada. ¡Apoya el arte local!</p>
+                    <button
+                      onClick={() => handleWhatsAppBooking(selectedPlay, "Información sobre Trueque")}
+                      className="w-full bg-midnight text-offWhite border-3 border-midnight px-12 py-4 display-font text-xl font-black hover:bg-[#25D366] transition-colors flex items-center justify-center gap-4"
+                    >
+                      CONSULTAR TRUEQUE EN WHATSAPP
+                    </button>
+                  </div>
                 ) : (
                   <div className="bg-midnight text-offWhite p-8 border-4 border-midnight mb-12 shadow-[8px_8px_0px_0px_#f59d2d]">
                     <h3 className="display-font text-2xl font-black mb-6 border-b-2 border-offWhite/20 pb-2">VALORES DE ENTRADA</h3>

@@ -252,7 +252,8 @@ export const PLAYS: Play[] = [
     color: 'bg-magentaEnergy',
     description: 'En este montaje, Simón Bolívar, repudiado y perseguido, llega a Honda, donde el amor de su pueblo lo reconforta antes de partir definitivamente. La acción ocurre en los tres días que pasó el Libertador en ese puerto del río Magdalena, esperando los champanes que lo llevarían a su destierro.',
     duration: '80 MIN',
-    ageRating: 'TODO PÚBLICO'
+    ageRating: 'TODO PÚBLICO',
+    isBarter: true
   },
   {
     id: 'memorial-20',
@@ -338,7 +339,8 @@ export const PLAYS: Play[] = [
     description: 'Kory y Kynu narra la historia de dos pequeños hermanos a quienes les encanta jugar. Mientras Kory es arriesgada y valiente, Kynu es tan competitivo que, en su afán por ganar, hace una promesa que no podrá cumplir, poniendo en peligro su vida y la de toda la aldea. Kory hará todo lo posible por rescatar a su hermano y salvar a su pueblo, encontrando en el camino seres fantásticos y cómplices inesperados. La obra aborda temas como el perdón, la amistad y la responsabilidad, y está narrada a través de la técnica de títeres peleles sobre mesa, con contrastes de color, juegos de luz y música que potencian la expresividad de los objetos animados.',
     duration: '60 MIN',
     ageRating: 'TODO PÚBLICO',
-    mapsLink: 'https://www.google.com/maps/place/Centro+Comercial+Los+%C3%81ngeles/@4.6037017,-74.072334,17z/data=!3m2!4b1!5s0x8e3f99a1ed0a6e39:0x7e82690a0b1299a8!4m6!3m5!1s0x8e3f99a3c9cbfb7f:0xbfa3582757f1af4d!8m2!3d4.6036964!4d-74.0697591!16s%2Fg%2F11r92d4nq?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D'
+    mapsLink: 'https://www.google.com/maps/place/Centro+Comercial+Los+%C3%81ngeles/@4.6037017,-74.072334,17z/data=!3m2!4b1!5s0x8e3f99a1ed0a6e39:0x7e82690a0b1299a8!4m6!3m5!1s0x8e3f99a3c9cbfb7f:0xbfa3582757f1af4d!8m2!3d4.6036964!4d-74.0697591!16s%2Fg%2F11r92d4nq?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D',
+    isBarter: true
   },
   {
     id: 'omarap-21',
@@ -451,7 +453,8 @@ export const PLAYS: Play[] = [
     color: 'bg-festPurple',
     description: 'Shame es una experiencia escénica inmersiva que explora la vergüenza como emoción íntima y social. A través de paisajes sucesivos y un dispositivo In Situ, la obra articula cuerpo, sonido, imagen y objetos para revelar las fisuras entre lo visible y lo oculto, invitando al espectador a transitar los límites entre la vulnerabilidad personal y el espejo colectivo.',
     duration: '70 MIN',
-    ageRating: '+15'
+    ageRating: '+15',
+    isBarter: true
   },
   {
     id: 'interes-22',

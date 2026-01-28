@@ -30,7 +30,7 @@ const TicketCard: React.FC<Props> = ({ play, onClick }) => {
       <div className="hidden md:flex w-48 border-l-3 border-dashed border-midnight p-6 flex-col items-center justify-center gap-2">
         <span className="bg-midnight text-offWhite px-3 py-1 text-xs font-bold">{play.genre}</span>
         <button className="bg-sunOrange border-3 border-midnight px-4 py-1 display-font text-xs font-black">
-          {play.genre.includes('CALLE') ? 'GRATIS' : 'ENTRADA $30k'}
+          {play.genre.includes('CALLE') ? 'GRATIS' : play.isBarter ? 'TRUEQUE' : 'ENTRADA $30k'}
         </button>
       </div>
     </div>

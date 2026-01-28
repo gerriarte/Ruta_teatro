@@ -13,6 +13,7 @@ export interface Play {
   ageRating: string;
   collectiveId: string; // Linked to Agrupacion
   mapsLink?: string;
+  isBarter?: boolean;
 }
 
 export interface Agrupacion {
