@@ -245,7 +245,7 @@ const App: React.FC = () => {
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  <div className="bg-offWhite border-4 border-midnight p-8 flex flex-col justify-between hover:translate-x-2 hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_#2A3535]">
+                  <div onClick={() => handlePageChange('billboard')} className="bg-offWhite border-4 border-midnight p-8 flex flex-col justify-between hover:translate-x-2 hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_#2A3535] cursor-pointer">
                     <div>
                       <h3 className="display-font text-3xl font-black mb-4">ENTRADA INDIVIDUAL</h3>
                       <div className="space-y-4">

@@ -224,7 +224,8 @@ export const PLAYS: Play[] = [
     color: 'bg-sunOrange',
     description: 'Historia teatral, especialmente para niños, que cuenta la manera como una comunidad de insectos construye su pueblo libre y feliz, lejos del paso de hombres y animales grandes. En esta travesía la cigarra canta alegremente para alegrar a todo el pueblo, situación que genera envidia en el escarabajo, alcalde (bastante desafinado, por cierto) y que provoca la ira de este, hasta lograr llevarla presa para evitar su canto. El pueblo que está en silencio, se invade de sapos que quieren acabar con todos y comerse los insectos, ante esta situación lo único que queda como recurso es que la cigarra cante para dormir al sapo y luego hacerlo caer a un precipicio.',
     duration: '50 MIN',
-    ageRating: 'TODO PÚBLICO'
+    ageRating: 'TODO PÚBLICO',
+    isBarter: true
   },
   {
     id: 'transmigracion-19',
@@ -282,7 +283,8 @@ export const PLAYS: Play[] = [
     color: 'bg-sunOrange',
     description: 'Margarita se prepara para su boda con Floro, mientras los habitantes del humedal celebran el acontecimiento. Sin embargo, Floro el cocuyo pierde su empleo de alumbrar los campos y, engañado por la Reina Hormiga y su secuaz el Hormigón, es despojado de su tesoro más valioso: la luz. Tras rechazar un mensaje de su amada y enfrentarse a su propia soberbia, Floro emprende un viaje lleno de pruebas para recuperar lo perdido. La obra, cargada de humor y fantasía, aborda temas como la responsabilidad, el poder y la conciencia sobre el uso de la energía.',
     duration: '65 MIN',
-    ageRating: 'TODO PÚBLICO'
+    ageRating: 'TODO PÚBLICO',
+    isBarter: true
   },
   {
     id: 'esquizofrenicos-20',
@@ -368,7 +370,8 @@ export const PLAYS: Play[] = [
     color: 'bg-sunOrange',
     description: 'La Tríada aborda la toma del Palacio de Justicia de Bogotá, ocurrida los días 5 y 6 de noviembre de 1985, como un hecho que partió con violencia la historia de Colombia. La obra se refleja en sus protagonistas: un joven soldado cuya única pretensión era abandonar la miseria en la que vivía; un guerrillero preso del amor de juventud; y un magistrado que, por cuestión de su oficio, se adentra en las fauces del infierno. A ellos se suma una víctima adicional: una madre, símbolo de todas las víctimas anónimas cuyo único vínculo con la tragedia es ser familiar de alguno de los protagonistas.',
     duration: '70 MIN',
-    ageRating: '+12'
+    ageRating: '+12',
+    isBarter: true
   },
   {
     id: 'soledades-21',
@@ -425,7 +428,8 @@ export const PLAYS: Play[] = [
     color: 'bg-sunOrange',
     description: '"El Retorno del agua" es una pieza teatral inspirada en dos leyendas tradicionales de oriente que, por medio de la imagen poética, el movimiento y la fantasía busca ser llamado escénico para el cuidado y la conservación de nuestros recursos naturales, en especial el Agua como fuente de vida y equilibrio de nuestros ecosistemas. En el año del Dragón este espectáculo para el público en general se convierte en un mensaje para concientizarnos sobre las condiciones en que está nuestro planeta y hace un llamado a sumar las pequeñas acciones que pueden contribuir a la restauración y protección de nuestros territorios.',
     duration: '60 MIN',
-    ageRating: 'TODO PÚBLICO'
+    ageRating: 'TODO PÚBLICO',
+    isBarter: true
   },
   {
     id: 'omarap-22',
