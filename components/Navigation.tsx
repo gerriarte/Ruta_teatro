@@ -43,7 +43,7 @@ const Navigation: React.FC<Props> = ({ currentPage, setPage }) => {
         onClick={() => setPage('billboard')}
         className="bg-festPurple text-offWhite border-3 border-midnight px-6 py-2 display-font font-black hover:bg-magentaEnergy transition-all hover:-translate-y-1 active:translate-y-0"
       >
-        TICKETS
+        PROGRAMACIÓN
       </button>
     </nav>
   );
