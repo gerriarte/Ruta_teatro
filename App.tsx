@@ -244,7 +244,7 @@ const App: React.FC = () => {
                   VALORES DE <br /> <span className="text-offWhite">BOLETERÍA</span>
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                   <div onClick={() => handlePageChange('billboard')} className="bg-offWhite border-4 border-midnight p-8 flex flex-col justify-between hover:translate-x-2 hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_#2A3535] cursor-pointer">
                     <div>
                       <h3 className="display-font text-3xl font-black mb-4">ENTRADA INDIVIDUAL</h3>
@@ -291,6 +291,30 @@ const App: React.FC = () => {
                     </div>
                     <button onClick={() => handleGeneralBooking("Promo Somos 5")} className="mt-8 bg-midnight text-offWhite w-full py-3 display-font font-black hover:bg-magentaEnergy hover:text-offWhite transition-colors">COMPRAR PROMO</button>
 
+                  </div>
+
+                  <div className="bg-magentaEnergy text-offWhite border-4 border-midnight p-8 flex flex-col justify-between hover:translate-x-2 hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_#2A3535]">
+                    <div>
+                      <h3 className="display-font text-3xl font-black mb-4">TRUEQUE</h3>
+                      <p className="text-sm font-bold leading-tight mb-6 opacity-90">
+                        Trae un aporte significativo para intercambiar por tu entrada en estas funciones:
+                      </p>
+                      <ul className="space-y-3">
+                        {PLAYS.filter(p => p.isBarter).map(play => (
+                          <li
+                            key={play.id}
+                            onClick={() => handlePlaySelect(play)}
+                            className="cursor-pointer group/item flex items-start gap-2"
+                          >
+                            <span className="font-black text-sunOrange group-hover/item:translate-x-1 transition-transform">➤</span>
+                            <span className="font-black text-xs md:text-sm uppercase group-hover/item:underline decoration-2 underline-offset-2 leading-tight">{play.title}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="mt-8 pt-4 border-t-2 border-offWhite/30">
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-center opacity-80">¡El arte se intercambia!</p>
+                    </div>
                   </div>
                 </div>
 
